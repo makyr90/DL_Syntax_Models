@@ -1,0 +1,8116 @@
+Extracting vocabulary
+Initializing  model
+Load external embeddings. External embeddings vectors dimension 300
+External embeddings vectors dimension after linear projection 100
+Dropout probability for MLP's hidden layers & LSTM's hidden/reccurent units: 0.33
+
+-----------------
+Starting epoch 1
+Train loss/token=6.8165, time=28.65s
+Performance on Dev data
+Finish predictions on dev data in 23.17s
+---
+UAS accuracy:	8.69
+LAS accuracy:	1.74
+Highest LAS(@Dev): 1.74 at epoch 1
+
+-----------------
+Starting epoch 2
+Train loss/token=6.0252, time=26.59s
+Performance on Dev data
+Finish predictions on dev data in 23.16s
+---
+UAS accuracy:	8.28
+LAS accuracy:	0.89
+Highest LAS(@Dev): 1.74 at epoch 1
+
+-----------------
+Starting epoch 3
+Train loss/token=5.7344, time=26.62s
+Performance on Dev data
+Finish predictions on dev data in 23.18s
+---
+UAS accuracy:	13.57
+LAS accuracy:	3.63
+Highest LAS(@Dev): 3.63 at epoch 3
+
+-----------------
+Starting epoch 4
+Train loss/token=5.5943, time=26.84s
+Performance on Dev data
+Finish predictions on dev data in 23.25s
+---
+UAS accuracy:	14.53
+LAS accuracy:	4.05
+Highest LAS(@Dev): 4.05 at epoch 4
+
+-----------------
+Starting epoch 5
+Train loss/token=5.5264, time=27.95s
+Performance on Dev data
+Finish predictions on dev data in 24.24s
+---
+UAS accuracy:	14.98
+LAS accuracy:	4.28
+Highest LAS(@Dev): 4.28 at epoch 5
+
+-----------------
+Starting epoch 6
+Train loss/token=5.3727, time=27.01s
+Performance on Dev data
+Finish predictions on dev data in 23.32s
+---
+UAS accuracy:	24.12
+LAS accuracy:	8.13
+Highest LAS(@Dev): 8.13 at epoch 6
+
+-----------------
+Starting epoch 7
+Train loss/token=5.3593, time=26.74s
+Performance on Dev data
+Finish predictions on dev data in 23.79s
+---
+UAS accuracy:	21.29
+LAS accuracy:	5.48
+Highest LAS(@Dev): 8.13 at epoch 6
+
+-----------------
+Starting epoch 8
+Train loss/token=5.2209, time=26.96s
+Performance on Dev data
+Finish predictions on dev data in 23.32s
+---
+UAS accuracy:	26.00
+LAS accuracy:	5.10
+Highest LAS(@Dev): 8.13 at epoch 6
+
+-----------------
+Starting epoch 9
+Train loss/token=4.8094, time=26.79s
+Performance on Dev data
+Finish predictions on dev data in 23.35s
+---
+UAS accuracy:	39.76
+LAS accuracy:	12.89
+Highest LAS(@Dev): 12.89 at epoch 9
+
+-----------------
+Starting epoch 10
+Train loss/token=4.2242, time=26.60s
+Performance on Dev data
+Finish predictions on dev data in 23.17s
+---
+UAS accuracy:	48.45
+LAS accuracy:	22.04
+Highest LAS(@Dev): 22.04 at epoch 10
+
+-----------------
+Starting epoch 11
+Train loss/token=3.6574, time=26.79s
+Performance on Dev data
+Finish predictions on dev data in 23.39s
+---
+UAS accuracy:	57.17
+LAS accuracy:	30.73
+Highest LAS(@Dev): 30.73 at epoch 11
+
+-----------------
+Starting epoch 12
+Train loss/token=3.3574, time=27.54s
+Performance on Dev data
+Finish predictions on dev data in 23.29s
+---
+UAS accuracy:	60.10
+LAS accuracy:	39.03
+Highest LAS(@Dev): 39.03 at epoch 12
+
+-----------------
+Starting epoch 13
+Train loss/token=3.0841, time=28.03s
+Performance on Dev data
+Finish predictions on dev data in 24.15s
+---
+UAS accuracy:	59.56
+LAS accuracy:	39.97
+Highest LAS(@Dev): 39.97 at epoch 13
+
+-----------------
+Starting epoch 14
+Train loss/token=2.9641, time=27.88s
+Performance on Dev data
+Finish predictions on dev data in 23.67s
+---
+UAS accuracy:	63.43
+LAS accuracy:	47.42
+Highest LAS(@Dev): 47.42 at epoch 14
+
+-----------------
+Starting epoch 15
+Train loss/token=2.7811, time=27.36s
+Performance on Dev data
+Finish predictions on dev data in 23.38s
+---
+UAS accuracy:	65.31
+LAS accuracy:	49.42
+Highest LAS(@Dev): 49.42 at epoch 15
+
+-----------------
+Starting epoch 16
+Train loss/token=2.5800, time=26.93s
+Performance on Dev data
+Finish predictions on dev data in 23.29s
+---
+UAS accuracy:	67.33
+LAS accuracy:	54.16
+Highest LAS(@Dev): 54.16 at epoch 16
+
+-----------------
+Starting epoch 17
+Train loss/token=2.4305, time=26.88s
+Performance on Dev data
+Finish predictions on dev data in 23.56s
+---
+UAS accuracy:	68.85
+LAS accuracy:	56.79
+Highest LAS(@Dev): 56.79 at epoch 17
+
+-----------------
+Starting epoch 18
+Train loss/token=2.3087, time=26.88s
+Performance on Dev data
+Finish predictions on dev data in 23.38s
+---
+UAS accuracy:	69.98
+LAS accuracy:	58.41
+Highest LAS(@Dev): 58.41 at epoch 18
+
+-----------------
+Starting epoch 19
+Train loss/token=2.2101, time=26.88s
+Performance on Dev data
+Finish predictions on dev data in 24.18s
+---
+UAS accuracy:	70.98
+LAS accuracy:	60.68
+Highest LAS(@Dev): 60.68 at epoch 19
+
+-----------------
+Starting epoch 20
+Train loss/token=2.1257, time=27.70s
+Performance on Dev data
+Finish predictions on dev data in 24.70s
+---
+UAS accuracy:	71.77
+LAS accuracy:	61.78
+Highest LAS(@Dev): 61.78 at epoch 20
+
+-----------------
+Starting epoch 21
+Train loss/token=2.0355, time=27.37s
+Performance on Dev data
+Finish predictions on dev data in 23.25s
+---
+UAS accuracy:	73.23
+LAS accuracy:	63.22
+Highest LAS(@Dev): 63.22 at epoch 21
+
+-----------------
+Starting epoch 22
+Train loss/token=1.9826, time=26.69s
+Performance on Dev data
+Finish predictions on dev data in 23.18s
+---
+UAS accuracy:	72.97
+LAS accuracy:	63.64
+Highest LAS(@Dev): 63.64 at epoch 22
+
+-----------------
+Starting epoch 23
+Train loss/token=1.9245, time=26.87s
+Performance on Dev data
+Finish predictions on dev data in 23.39s
+---
+UAS accuracy:	74.84
+LAS accuracy:	65.82
+Highest LAS(@Dev): 65.82 at epoch 23
+
+-----------------
+Starting epoch 24
+Train loss/token=1.8636, time=26.57s
+Performance on Dev data
+Finish predictions on dev data in 23.18s
+---
+UAS accuracy:	75.11
+LAS accuracy:	66.09
+Highest LAS(@Dev): 66.09 at epoch 24
+
+-----------------
+Starting epoch 25
+Train loss/token=1.8396, time=26.59s
+Performance on Dev data
+Finish predictions on dev data in 23.41s
+---
+UAS accuracy:	74.45
+LAS accuracy:	66.75
+Highest LAS(@Dev): 66.75 at epoch 25
+
+-----------------
+Starting epoch 26
+Train loss/token=1.7865, time=26.81s
+Performance on Dev data
+Finish predictions on dev data in 23.57s
+---
+UAS accuracy:	75.88
+LAS accuracy:	67.98
+Highest LAS(@Dev): 67.98 at epoch 26
+
+-----------------
+Starting epoch 27
+Train loss/token=1.7180, time=26.71s
+Performance on Dev data
+Finish predictions on dev data in 23.25s
+---
+UAS accuracy:	75.68
+LAS accuracy:	68.32
+Highest LAS(@Dev): 68.32 at epoch 27
+
+-----------------
+Starting epoch 28
+Train loss/token=1.7041, time=26.87s
+Performance on Dev data
+Finish predictions on dev data in 23.43s
+---
+UAS accuracy:	77.24
+LAS accuracy:	70.13
+Highest LAS(@Dev): 70.13 at epoch 28
+
+-----------------
+Starting epoch 29
+Train loss/token=1.6731, time=26.84s
+Performance on Dev data
+Finish predictions on dev data in 23.42s
+---
+UAS accuracy:	78.56
+LAS accuracy:	71.23
+Highest LAS(@Dev): 71.23 at epoch 29
+
+-----------------
+Starting epoch 30
+Train loss/token=1.6008, time=26.87s
+Performance on Dev data
+Finish predictions on dev data in 23.34s
+---
+UAS accuracy:	77.82
+LAS accuracy:	71.40
+Highest LAS(@Dev): 71.40 at epoch 30
+
+-----------------
+Starting epoch 31
+Train loss/token=1.5698, time=26.93s
+Performance on Dev data
+Finish predictions on dev data in 23.35s
+---
+UAS accuracy:	78.78
+LAS accuracy:	72.31
+Highest LAS(@Dev): 72.31 at epoch 31
+
+-----------------
+Starting epoch 32
+Train loss/token=1.5196, time=26.85s
+Performance on Dev data
+Finish predictions on dev data in 23.36s
+---
+UAS accuracy:	79.36
+LAS accuracy:	73.03
+Highest LAS(@Dev): 73.03 at epoch 32
+
+-----------------
+Starting epoch 33
+Train loss/token=1.4903, time=26.96s
+Performance on Dev data
+Finish predictions on dev data in 23.58s
+---
+UAS accuracy:	78.66
+LAS accuracy:	72.70
+Highest LAS(@Dev): 73.03 at epoch 32
+
+-----------------
+Starting epoch 34
+Train loss/token=1.4880, time=27.03s
+Performance on Dev data
+Finish predictions on dev data in 23.52s
+---
+UAS accuracy:	80.22
+LAS accuracy:	74.34
+Highest LAS(@Dev): 74.34 at epoch 34
+
+-----------------
+Starting epoch 35
+Train loss/token=1.4574, time=26.83s
+Performance on Dev data
+Finish predictions on dev data in 23.11s
+---
+UAS accuracy:	79.83
+LAS accuracy:	73.86
+Highest LAS(@Dev): 74.34 at epoch 34
+
+-----------------
+Starting epoch 36
+Train loss/token=1.4230, time=26.87s
+Performance on Dev data
+Finish predictions on dev data in 23.45s
+---
+UAS accuracy:	80.28
+LAS accuracy:	74.86
+Highest LAS(@Dev): 74.86 at epoch 36
+
+-----------------
+Starting epoch 37
+Train loss/token=1.4066, time=26.91s
+Performance on Dev data
+Finish predictions on dev data in 23.19s
+---
+UAS accuracy:	81.14
+LAS accuracy:	75.66
+Highest LAS(@Dev): 75.66 at epoch 37
+
+-----------------
+Starting epoch 38
+Train loss/token=1.3883, time=26.79s
+Performance on Dev data
+Finish predictions on dev data in 23.15s
+---
+UAS accuracy:	81.01
+LAS accuracy:	75.86
+Highest LAS(@Dev): 75.86 at epoch 38
+
+-----------------
+Starting epoch 39
+Train loss/token=1.3560, time=26.64s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	81.89
+LAS accuracy:	76.58
+Highest LAS(@Dev): 76.58 at epoch 39
+
+-----------------
+Starting epoch 40
+Train loss/token=1.3328, time=26.66s
+Performance on Dev data
+Finish predictions on dev data in 23.45s
+---
+UAS accuracy:	81.35
+LAS accuracy:	76.18
+Highest LAS(@Dev): 76.58 at epoch 39
+
+-----------------
+Starting epoch 41
+Train loss/token=1.3215, time=26.83s
+Performance on Dev data
+Finish predictions on dev data in 23.40s
+---
+UAS accuracy:	81.74
+LAS accuracy:	76.57
+Highest LAS(@Dev): 76.58 at epoch 39
+
+-----------------
+Starting epoch 42
+Train loss/token=1.2945, time=26.90s
+Performance on Dev data
+Finish predictions on dev data in 23.47s
+---
+UAS accuracy:	82.39
+LAS accuracy:	77.21
+Highest LAS(@Dev): 77.21 at epoch 42
+
+-----------------
+Starting epoch 43
+Train loss/token=1.2862, time=26.57s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	81.95
+LAS accuracy:	76.74
+Highest LAS(@Dev): 77.21 at epoch 42
+
+-----------------
+Starting epoch 44
+Train loss/token=1.2766, time=26.57s
+Performance on Dev data
+Finish predictions on dev data in 23.11s
+---
+UAS accuracy:	82.38
+LAS accuracy:	77.48
+Highest LAS(@Dev): 77.48 at epoch 44
+
+-----------------
+Starting epoch 45
+Train loss/token=1.2687, time=26.76s
+Performance on Dev data
+Finish predictions on dev data in 23.54s
+---
+UAS accuracy:	82.67
+LAS accuracy:	77.86
+Highest LAS(@Dev): 77.86 at epoch 45
+
+-----------------
+Starting epoch 46
+Train loss/token=1.2473, time=27.14s
+Performance on Dev data
+Finish predictions on dev data in 23.52s
+---
+UAS accuracy:	82.36
+LAS accuracy:	77.59
+Highest LAS(@Dev): 77.86 at epoch 45
+
+-----------------
+Starting epoch 47
+Train loss/token=1.2355, time=26.95s
+Performance on Dev data
+Finish predictions on dev data in 23.57s
+---
+UAS accuracy:	82.64
+LAS accuracy:	78.06
+Highest LAS(@Dev): 78.06 at epoch 47
+
+-----------------
+Starting epoch 48
+Train loss/token=1.2178, time=27.02s
+Performance on Dev data
+Finish predictions on dev data in 23.30s
+---
+UAS accuracy:	83.22
+LAS accuracy:	78.73
+Highest LAS(@Dev): 78.73 at epoch 48
+
+-----------------
+Starting epoch 49
+Train loss/token=1.2162, time=26.76s
+Performance on Dev data
+Finish predictions on dev data in 23.13s
+---
+UAS accuracy:	83.40
+LAS accuracy:	78.97
+Highest LAS(@Dev): 78.97 at epoch 49
+
+-----------------
+Starting epoch 50
+Train loss/token=1.1837, time=27.12s
+Performance on Dev data
+Finish predictions on dev data in 23.22s
+---
+UAS accuracy:	83.21
+LAS accuracy:	78.49
+Highest LAS(@Dev): 78.97 at epoch 49
+
+-----------------
+Starting epoch 51
+Train loss/token=1.1953, time=26.95s
+Performance on Dev data
+Finish predictions on dev data in 24.54s
+---
+UAS accuracy:	83.09
+LAS accuracy:	78.64
+Highest LAS(@Dev): 78.97 at epoch 49
+
+-----------------
+Starting epoch 52
+Train loss/token=1.1623, time=28.83s
+Performance on Dev data
+Finish predictions on dev data in 24.52s
+---
+UAS accuracy:	83.38
+LAS accuracy:	78.78
+Highest LAS(@Dev): 78.97 at epoch 49
+
+-----------------
+Starting epoch 53
+Train loss/token=1.1562, time=27.70s
+Performance on Dev data
+Finish predictions on dev data in 23.52s
+---
+UAS accuracy:	83.66
+LAS accuracy:	79.32
+Highest LAS(@Dev): 79.32 at epoch 53
+
+-----------------
+Starting epoch 54
+Train loss/token=1.1457, time=26.79s
+Performance on Dev data
+Finish predictions on dev data in 24.20s
+---
+UAS accuracy:	83.43
+LAS accuracy:	79.18
+Highest LAS(@Dev): 79.32 at epoch 53
+
+-----------------
+Starting epoch 55
+Train loss/token=1.1170, time=27.91s
+Performance on Dev data
+Finish predictions on dev data in 23.93s
+---
+UAS accuracy:	83.63
+LAS accuracy:	79.51
+Highest LAS(@Dev): 79.51 at epoch 55
+
+-----------------
+Starting epoch 56
+Train loss/token=1.1207, time=27.50s
+Performance on Dev data
+Finish predictions on dev data in 23.25s
+---
+UAS accuracy:	83.79
+LAS accuracy:	79.56
+Highest LAS(@Dev): 79.56 at epoch 56
+
+-----------------
+Starting epoch 57
+Train loss/token=1.1194, time=26.76s
+Performance on Dev data
+Finish predictions on dev data in 23.51s
+---
+UAS accuracy:	84.01
+LAS accuracy:	79.70
+Highest LAS(@Dev): 79.70 at epoch 57
+
+-----------------
+Starting epoch 58
+Train loss/token=1.1081, time=28.26s
+Performance on Dev data
+Finish predictions on dev data in 23.49s
+---
+UAS accuracy:	83.97
+LAS accuracy:	79.81
+Highest LAS(@Dev): 79.81 at epoch 58
+
+-----------------
+Starting epoch 59
+Train loss/token=1.1112, time=27.16s
+Performance on Dev data
+Finish predictions on dev data in 23.72s
+---
+UAS accuracy:	84.11
+LAS accuracy:	79.84
+Highest LAS(@Dev): 79.84 at epoch 59
+
+-----------------
+Starting epoch 60
+Train loss/token=1.1010, time=26.73s
+Performance on Dev data
+Finish predictions on dev data in 23.16s
+---
+UAS accuracy:	83.94
+LAS accuracy:	79.73
+Highest LAS(@Dev): 79.84 at epoch 59
+
+-----------------
+Starting epoch 61
+Train loss/token=1.0769, time=26.79s
+Performance on Dev data
+Finish predictions on dev data in 23.47s
+---
+UAS accuracy:	84.39
+LAS accuracy:	80.20
+Highest LAS(@Dev): 80.20 at epoch 61
+
+-----------------
+Starting epoch 62
+Train loss/token=1.0738, time=26.82s
+Performance on Dev data
+Finish predictions on dev data in 23.20s
+---
+UAS accuracy:	84.47
+LAS accuracy:	80.45
+Highest LAS(@Dev): 80.45 at epoch 62
+
+-----------------
+Starting epoch 63
+Train loss/token=1.0537, time=26.91s
+Performance on Dev data
+Finish predictions on dev data in 23.26s
+---
+UAS accuracy:	83.98
+LAS accuracy:	79.78
+Highest LAS(@Dev): 80.45 at epoch 62
+
+-----------------
+Starting epoch 64
+Train loss/token=1.0390, time=26.77s
+Performance on Dev data
+Finish predictions on dev data in 23.22s
+---
+UAS accuracy:	84.41
+LAS accuracy:	80.50
+Highest LAS(@Dev): 80.50 at epoch 64
+
+-----------------
+Starting epoch 65
+Train loss/token=1.0518, time=26.79s
+Performance on Dev data
+Finish predictions on dev data in 23.22s
+---
+UAS accuracy:	84.25
+LAS accuracy:	80.36
+Highest LAS(@Dev): 80.50 at epoch 64
+
+-----------------
+Starting epoch 66
+Train loss/token=1.0360, time=26.70s
+Performance on Dev data
+Finish predictions on dev data in 23.17s
+---
+UAS accuracy:	84.34
+LAS accuracy:	80.50
+Highest LAS(@Dev): 80.50 at epoch 66
+
+-----------------
+Starting epoch 67
+Train loss/token=1.0106, time=26.69s
+Performance on Dev data
+Finish predictions on dev data in 23.18s
+---
+UAS accuracy:	84.51
+LAS accuracy:	80.58
+Highest LAS(@Dev): 80.58 at epoch 67
+
+-----------------
+Starting epoch 68
+Train loss/token=1.0129, time=26.69s
+Performance on Dev data
+Finish predictions on dev data in 23.20s
+---
+UAS accuracy:	84.80
+LAS accuracy:	80.89
+Highest LAS(@Dev): 80.89 at epoch 68
+
+-----------------
+Starting epoch 69
+Train loss/token=1.0240, time=26.66s
+Performance on Dev data
+Finish predictions on dev data in 23.29s
+---
+UAS accuracy:	85.18
+LAS accuracy:	81.59
+Highest LAS(@Dev): 81.59 at epoch 69
+
+-----------------
+Starting epoch 70
+Train loss/token=1.0222, time=26.65s
+Performance on Dev data
+Finish predictions on dev data in 23.18s
+---
+UAS accuracy:	84.51
+LAS accuracy:	80.64
+Highest LAS(@Dev): 81.59 at epoch 69
+
+-----------------
+Starting epoch 71
+Train loss/token=0.9976, time=26.66s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	84.71
+LAS accuracy:	81.01
+Highest LAS(@Dev): 81.59 at epoch 69
+
+-----------------
+Starting epoch 72
+Train loss/token=0.9863, time=26.67s
+Performance on Dev data
+Finish predictions on dev data in 23.16s
+---
+UAS accuracy:	85.25
+LAS accuracy:	81.42
+Highest LAS(@Dev): 81.59 at epoch 69
+
+-----------------
+Starting epoch 73
+Train loss/token=0.9857, time=26.67s
+Performance on Dev data
+Finish predictions on dev data in 23.15s
+---
+UAS accuracy:	84.76
+LAS accuracy:	80.84
+Highest LAS(@Dev): 81.59 at epoch 69
+
+-----------------
+Starting epoch 74
+Train loss/token=0.9735, time=26.66s
+Performance on Dev data
+Finish predictions on dev data in 23.11s
+---
+UAS accuracy:	84.73
+LAS accuracy:	81.00
+Highest LAS(@Dev): 81.59 at epoch 69
+
+-----------------
+Starting epoch 75
+Train loss/token=0.9722, time=26.66s
+Performance on Dev data
+Finish predictions on dev data in 23.29s
+---
+UAS accuracy:	85.18
+LAS accuracy:	81.43
+Highest LAS(@Dev): 81.59 at epoch 69
+
+-----------------
+Starting epoch 76
+Train loss/token=0.9642, time=26.66s
+Performance on Dev data
+Finish predictions on dev data in 23.16s
+---
+UAS accuracy:	84.80
+LAS accuracy:	81.11
+Highest LAS(@Dev): 81.59 at epoch 69
+
+-----------------
+Starting epoch 77
+Train loss/token=0.9489, time=26.65s
+Performance on Dev data
+Finish predictions on dev data in 23.11s
+---
+UAS accuracy:	85.30
+LAS accuracy:	81.51
+Highest LAS(@Dev): 81.59 at epoch 69
+
+-----------------
+Starting epoch 78
+Train loss/token=0.9421, time=26.65s
+Performance on Dev data
+Finish predictions on dev data in 23.17s
+---
+UAS accuracy:	85.16
+LAS accuracy:	81.59
+Highest LAS(@Dev): 81.59 at epoch 78
+
+-----------------
+Starting epoch 79
+Train loss/token=0.9404, time=26.72s
+Performance on Dev data
+Finish predictions on dev data in 23.40s
+---
+UAS accuracy:	84.86
+LAS accuracy:	81.20
+Highest LAS(@Dev): 81.59 at epoch 78
+
+-----------------
+Starting epoch 80
+Train loss/token=0.9369, time=26.90s
+Performance on Dev data
+Finish predictions on dev data in 23.18s
+---
+UAS accuracy:	85.27
+LAS accuracy:	81.66
+Highest LAS(@Dev): 81.66 at epoch 80
+
+-----------------
+Starting epoch 81
+Train loss/token=0.9356, time=26.63s
+Performance on Dev data
+Finish predictions on dev data in 23.15s
+---
+UAS accuracy:	85.47
+LAS accuracy:	81.90
+Highest LAS(@Dev): 81.90 at epoch 81
+
+-----------------
+Starting epoch 82
+Train loss/token=0.9360, time=26.63s
+Performance on Dev data
+Finish predictions on dev data in 23.14s
+---
+UAS accuracy:	85.38
+LAS accuracy:	81.72
+Highest LAS(@Dev): 81.90 at epoch 81
+
+-----------------
+Starting epoch 83
+Train loss/token=0.9193, time=26.63s
+Performance on Dev data
+Finish predictions on dev data in 23.14s
+---
+UAS accuracy:	85.04
+LAS accuracy:	81.33
+Highest LAS(@Dev): 81.90 at epoch 81
+
+-----------------
+Starting epoch 84
+Train loss/token=0.9175, time=26.63s
+Performance on Dev data
+Finish predictions on dev data in 23.15s
+---
+UAS accuracy:	85.22
+LAS accuracy:	81.67
+Highest LAS(@Dev): 81.90 at epoch 81
+
+-----------------
+Starting epoch 85
+Train loss/token=0.9111, time=26.64s
+Performance on Dev data
+Finish predictions on dev data in 23.16s
+---
+UAS accuracy:	85.45
+LAS accuracy:	82.10
+Highest LAS(@Dev): 82.10 at epoch 85
+
+-----------------
+Starting epoch 86
+Train loss/token=0.9133, time=26.62s
+Performance on Dev data
+Finish predictions on dev data in 23.13s
+---
+UAS accuracy:	85.21
+LAS accuracy:	81.79
+Highest LAS(@Dev): 82.10 at epoch 85
+
+-----------------
+Starting epoch 87
+Train loss/token=0.9013, time=26.62s
+Performance on Dev data
+Finish predictions on dev data in 24.09s
+---
+UAS accuracy:	85.27
+LAS accuracy:	81.84
+Highest LAS(@Dev): 82.10 at epoch 85
+
+-----------------
+Starting epoch 88
+Train loss/token=0.9096, time=27.59s
+Performance on Dev data
+Finish predictions on dev data in 23.80s
+---
+UAS accuracy:	85.46
+LAS accuracy:	81.93
+Highest LAS(@Dev): 82.10 at epoch 85
+
+-----------------
+Starting epoch 89
+Train loss/token=0.9094, time=27.53s
+Performance on Dev data
+Finish predictions on dev data in 23.77s
+---
+UAS accuracy:	85.44
+LAS accuracy:	82.04
+Highest LAS(@Dev): 82.10 at epoch 85
+
+-----------------
+Starting epoch 90
+Train loss/token=0.8898, time=27.42s
+Performance on Dev data
+Finish predictions on dev data in 23.22s
+---
+UAS accuracy:	85.24
+LAS accuracy:	81.84
+Highest LAS(@Dev): 82.10 at epoch 85
+
+-----------------
+Starting epoch 91
+Train loss/token=0.8820, time=26.76s
+Performance on Dev data
+Finish predictions on dev data in 23.23s
+---
+UAS accuracy:	85.26
+LAS accuracy:	81.88
+Highest LAS(@Dev): 82.10 at epoch 85
+
+-----------------
+Starting epoch 92
+Train loss/token=0.8745, time=26.76s
+Performance on Dev data
+Finish predictions on dev data in 23.20s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.36
+Highest LAS(@Dev): 82.36 at epoch 92
+
+-----------------
+Starting epoch 93
+Train loss/token=0.8903, time=26.77s
+Performance on Dev data
+Finish predictions on dev data in 23.41s
+---
+UAS accuracy:	85.39
+LAS accuracy:	81.78
+Highest LAS(@Dev): 82.36 at epoch 92
+
+-----------------
+Starting epoch 94
+Train loss/token=0.8667, time=26.65s
+Performance on Dev data
+Finish predictions on dev data in 23.14s
+---
+UAS accuracy:	85.32
+LAS accuracy:	81.87
+Highest LAS(@Dev): 82.36 at epoch 92
+
+-----------------
+Starting epoch 95
+Train loss/token=0.8665, time=26.66s
+Performance on Dev data
+Finish predictions on dev data in 23.13s
+---
+UAS accuracy:	85.19
+LAS accuracy:	81.72
+Highest LAS(@Dev): 82.36 at epoch 92
+
+-----------------
+Starting epoch 96
+Train loss/token=0.8567, time=26.65s
+Performance on Dev data
+Finish predictions on dev data in 23.14s
+---
+UAS accuracy:	85.49
+LAS accuracy:	82.12
+Highest LAS(@Dev): 82.36 at epoch 92
+
+-----------------
+Starting epoch 97
+Train loss/token=0.8665, time=26.64s
+Performance on Dev data
+Finish predictions on dev data in 23.13s
+---
+UAS accuracy:	85.45
+LAS accuracy:	82.29
+Highest LAS(@Dev): 82.36 at epoch 92
+
+-----------------
+Starting epoch 98
+Train loss/token=0.8331, time=26.65s
+Performance on Dev data
+Finish predictions on dev data in 23.14s
+---
+UAS accuracy:	85.32
+LAS accuracy:	82.01
+Highest LAS(@Dev): 82.36 at epoch 92
+
+-----------------
+Starting epoch 99
+Train loss/token=0.8396, time=26.66s
+Performance on Dev data
+Finish predictions on dev data in 23.32s
+---
+UAS accuracy:	85.68
+LAS accuracy:	82.39
+Highest LAS(@Dev): 82.39 at epoch 99
+
+-----------------
+Starting epoch 100
+Train loss/token=0.8406, time=27.43s
+Performance on Dev data
+Finish predictions on dev data in 23.98s
+---
+UAS accuracy:	85.60
+LAS accuracy:	82.41
+Highest LAS(@Dev): 82.41 at epoch 100
+
+-----------------
+Starting epoch 101
+Train loss/token=0.8350, time=26.66s
+Performance on Dev data
+Finish predictions on dev data in 23.14s
+---
+UAS accuracy:	85.55
+LAS accuracy:	82.41
+Highest LAS(@Dev): 82.41 at epoch 101
+
+-----------------
+Starting epoch 102
+Train loss/token=0.8270, time=26.65s
+Performance on Dev data
+Finish predictions on dev data in 23.13s
+---
+UAS accuracy:	85.39
+LAS accuracy:	82.12
+Highest LAS(@Dev): 82.41 at epoch 101
+
+-----------------
+Starting epoch 103
+Train loss/token=0.8443, time=26.65s
+Performance on Dev data
+Finish predictions on dev data in 23.14s
+---
+UAS accuracy:	85.45
+LAS accuracy:	82.23
+Highest LAS(@Dev): 82.41 at epoch 101
+
+-----------------
+Starting epoch 104
+Train loss/token=0.8177, time=26.65s
+Performance on Dev data
+Finish predictions on dev data in 23.14s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.39
+Highest LAS(@Dev): 82.41 at epoch 101
+
+-----------------
+Starting epoch 105
+Train loss/token=0.8258, time=26.65s
+Performance on Dev data
+Finish predictions on dev data in 23.15s
+---
+UAS accuracy:	85.26
+LAS accuracy:	81.97
+Highest LAS(@Dev): 82.41 at epoch 101
+
+-----------------
+Starting epoch 106
+Train loss/token=0.8250, time=26.72s
+Performance on Dev data
+Finish predictions on dev data in 23.11s
+---
+UAS accuracy:	85.30
+LAS accuracy:	82.18
+Highest LAS(@Dev): 82.41 at epoch 101
+
+-----------------
+Starting epoch 107
+Train loss/token=0.8253, time=26.49s
+Performance on Dev data
+Finish predictions on dev data in 23.10s
+---
+UAS accuracy:	86.00
+LAS accuracy:	82.79
+Highest LAS(@Dev): 82.79 at epoch 107
+
+-----------------
+Starting epoch 108
+Train loss/token=0.8315, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.10s
+---
+UAS accuracy:	85.84
+LAS accuracy:	82.44
+Highest LAS(@Dev): 82.79 at epoch 107
+
+-----------------
+Starting epoch 109
+Train loss/token=0.8017, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.11s
+---
+UAS accuracy:	85.25
+LAS accuracy:	81.98
+Highest LAS(@Dev): 82.79 at epoch 107
+
+-----------------
+Starting epoch 110
+Train loss/token=0.8062, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.11s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.31
+Highest LAS(@Dev): 82.79 at epoch 107
+
+-----------------
+Starting epoch 111
+Train loss/token=0.8026, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.11s
+---
+UAS accuracy:	85.39
+LAS accuracy:	82.24
+Highest LAS(@Dev): 82.79 at epoch 107
+
+-----------------
+Starting epoch 112
+Train loss/token=0.7820, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	85.99
+LAS accuracy:	82.65
+Highest LAS(@Dev): 82.79 at epoch 107
+
+-----------------
+Starting epoch 113
+Train loss/token=0.8077, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.11s
+---
+UAS accuracy:	85.52
+LAS accuracy:	82.39
+Highest LAS(@Dev): 82.79 at epoch 107
+
+-----------------
+Starting epoch 114
+Train loss/token=0.7878, time=26.49s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	85.59
+LAS accuracy:	82.69
+Highest LAS(@Dev): 82.79 at epoch 107
+
+-----------------
+Starting epoch 115
+Train loss/token=0.7709, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.10s
+---
+UAS accuracy:	85.97
+LAS accuracy:	82.97
+Highest LAS(@Dev): 82.97 at epoch 115
+
+-----------------
+Starting epoch 116
+Train loss/token=0.7679, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.11s
+---
+UAS accuracy:	85.03
+LAS accuracy:	81.86
+Highest LAS(@Dev): 82.97 at epoch 115
+
+-----------------
+Starting epoch 117
+Train loss/token=0.7723, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.10s
+---
+UAS accuracy:	85.45
+LAS accuracy:	82.37
+Highest LAS(@Dev): 82.97 at epoch 115
+
+-----------------
+Starting epoch 118
+Train loss/token=0.7616, time=26.79s
+Performance on Dev data
+Finish predictions on dev data in 23.24s
+---
+UAS accuracy:	85.82
+LAS accuracy:	82.70
+Highest LAS(@Dev): 82.97 at epoch 115
+
+-----------------
+Starting epoch 119
+Train loss/token=0.7713, time=26.70s
+Performance on Dev data
+Finish predictions on dev data in 23.16s
+---
+UAS accuracy:	85.68
+LAS accuracy:	82.88
+Highest LAS(@Dev): 82.97 at epoch 115
+
+-----------------
+Starting epoch 120
+Train loss/token=0.7484, time=26.72s
+Performance on Dev data
+Finish predictions on dev data in 23.29s
+---
+UAS accuracy:	85.65
+LAS accuracy:	82.73
+Highest LAS(@Dev): 82.97 at epoch 115
+
+-----------------
+Starting epoch 121
+Train loss/token=0.7401, time=27.03s
+Performance on Dev data
+Finish predictions on dev data in 23.19s
+---
+UAS accuracy:	85.99
+LAS accuracy:	82.97
+Highest LAS(@Dev): 82.97 at epoch 121
+
+-----------------
+Starting epoch 122
+Train loss/token=0.7584, time=26.62s
+Performance on Dev data
+Finish predictions on dev data in 23.22s
+---
+UAS accuracy:	85.87
+LAS accuracy:	82.90
+Highest LAS(@Dev): 82.97 at epoch 121
+
+-----------------
+Starting epoch 123
+Train loss/token=0.7580, time=26.70s
+Performance on Dev data
+Finish predictions on dev data in 23.23s
+---
+UAS accuracy:	85.81
+LAS accuracy:	82.81
+Highest LAS(@Dev): 82.97 at epoch 121
+
+-----------------
+Starting epoch 124
+Train loss/token=0.7572, time=26.52s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.84
+LAS accuracy:	82.90
+Highest LAS(@Dev): 82.97 at epoch 121
+
+-----------------
+Starting epoch 125
+Train loss/token=0.7572, time=26.48s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.89
+LAS accuracy:	82.88
+Highest LAS(@Dev): 82.97 at epoch 121
+
+-----------------
+Starting epoch 126
+Train loss/token=0.7401, time=26.49s
+Performance on Dev data
+Finish predictions on dev data in 23.03s
+---
+UAS accuracy:	86.27
+LAS accuracy:	83.10
+Highest LAS(@Dev): 83.10 at epoch 126
+
+-----------------
+Starting epoch 127
+Train loss/token=0.7488, time=26.57s
+Performance on Dev data
+Finish predictions on dev data in 23.16s
+---
+UAS accuracy:	85.69
+LAS accuracy:	82.77
+Highest LAS(@Dev): 83.10 at epoch 126
+
+-----------------
+Starting epoch 128
+Train loss/token=0.7473, time=26.48s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	85.81
+LAS accuracy:	82.88
+Highest LAS(@Dev): 83.10 at epoch 126
+
+-----------------
+Starting epoch 129
+Train loss/token=0.7353, time=26.49s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	85.78
+LAS accuracy:	82.65
+Highest LAS(@Dev): 83.10 at epoch 126
+
+-----------------
+Starting epoch 130
+Train loss/token=0.7361, time=26.48s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.82
+Highest LAS(@Dev): 83.10 at epoch 126
+
+-----------------
+Starting epoch 131
+Train loss/token=0.7464, time=26.49s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.91
+LAS accuracy:	83.06
+Highest LAS(@Dev): 83.10 at epoch 126
+
+-----------------
+Starting epoch 132
+Train loss/token=0.7264, time=26.49s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.83
+LAS accuracy:	82.70
+Highest LAS(@Dev): 83.10 at epoch 126
+
+-----------------
+Starting epoch 133
+Train loss/token=0.7285, time=26.48s
+Performance on Dev data
+Finish predictions on dev data in 23.19s
+---
+UAS accuracy:	85.54
+LAS accuracy:	82.65
+Highest LAS(@Dev): 83.10 at epoch 126
+
+-----------------
+Starting epoch 134
+Train loss/token=0.7301, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.05
+LAS accuracy:	83.10
+Highest LAS(@Dev): 83.10 at epoch 134
+
+-----------------
+Starting epoch 135
+Train loss/token=0.7306, time=26.40s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.96
+LAS accuracy:	83.14
+Highest LAS(@Dev): 83.14 at epoch 135
+
+-----------------
+Starting epoch 136
+Train loss/token=0.7200, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 22.97s
+---
+UAS accuracy:	86.31
+LAS accuracy:	83.29
+Highest LAS(@Dev): 83.29 at epoch 136
+
+-----------------
+Starting epoch 137
+Train loss/token=0.7309, time=26.46s
+Performance on Dev data
+Finish predictions on dev data in 23.18s
+---
+UAS accuracy:	85.76
+LAS accuracy:	83.03
+Highest LAS(@Dev): 83.29 at epoch 136
+
+-----------------
+Starting epoch 138
+Train loss/token=0.7053, time=26.53s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.21
+LAS accuracy:	83.35
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 139
+Train loss/token=0.7065, time=26.52s
+Performance on Dev data
+Finish predictions on dev data in 23.29s
+---
+UAS accuracy:	85.70
+LAS accuracy:	82.86
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 140
+Train loss/token=0.7143, time=27.03s
+Performance on Dev data
+Finish predictions on dev data in 23.31s
+---
+UAS accuracy:	85.43
+LAS accuracy:	82.64
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 141
+Train loss/token=0.7061, time=26.78s
+Performance on Dev data
+Finish predictions on dev data in 25.01s
+---
+UAS accuracy:	86.16
+LAS accuracy:	83.13
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 142
+Train loss/token=0.6882, time=27.24s
+Performance on Dev data
+Finish predictions on dev data in 23.68s
+---
+UAS accuracy:	86.00
+LAS accuracy:	83.10
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 143
+Train loss/token=0.6902, time=27.36s
+Performance on Dev data
+Finish predictions on dev data in 24.29s
+---
+UAS accuracy:	86.00
+LAS accuracy:	83.03
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 144
+Train loss/token=0.6952, time=27.26s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	85.66
+LAS accuracy:	82.77
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 145
+Train loss/token=0.6963, time=26.68s
+Performance on Dev data
+Finish predictions on dev data in 23.06s
+---
+UAS accuracy:	85.89
+LAS accuracy:	83.11
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 146
+Train loss/token=0.6992, time=26.62s
+Performance on Dev data
+Finish predictions on dev data in 23.15s
+---
+UAS accuracy:	86.06
+LAS accuracy:	83.23
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 147
+Train loss/token=0.7058, time=26.68s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.60
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 148
+Train loss/token=0.6892, time=26.94s
+Performance on Dev data
+Finish predictions on dev data in 23.34s
+---
+UAS accuracy:	86.00
+LAS accuracy:	83.11
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 149
+Train loss/token=0.6980, time=26.65s
+Performance on Dev data
+Finish predictions on dev data in 23.19s
+---
+UAS accuracy:	85.81
+LAS accuracy:	82.80
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 150
+Train loss/token=0.6715, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.12s
+---
+UAS accuracy:	86.24
+LAS accuracy:	83.27
+Highest LAS(@Dev): 83.35 at epoch 138
+
+-----------------
+Starting epoch 151
+Train loss/token=0.6894, time=26.86s
+Performance on Dev data
+Finish predictions on dev data in 23.29s
+---
+UAS accuracy:	86.41
+LAS accuracy:	83.50
+Highest LAS(@Dev): 83.50 at epoch 151
+
+-----------------
+Starting epoch 152
+Train loss/token=0.6456, time=26.62s
+Performance on Dev data
+Finish predictions on dev data in 23.13s
+---
+UAS accuracy:	86.00
+LAS accuracy:	83.13
+Highest LAS(@Dev): 83.50 at epoch 151
+
+-----------------
+Starting epoch 153
+Train loss/token=0.6676, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.07s
+---
+UAS accuracy:	86.22
+LAS accuracy:	83.34
+Highest LAS(@Dev): 83.50 at epoch 151
+
+-----------------
+Starting epoch 154
+Train loss/token=0.6627, time=26.65s
+Performance on Dev data
+Finish predictions on dev data in 23.07s
+---
+UAS accuracy:	86.03
+LAS accuracy:	83.18
+Highest LAS(@Dev): 83.50 at epoch 151
+
+-----------------
+Starting epoch 155
+Train loss/token=0.6791, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	85.92
+LAS accuracy:	82.96
+Highest LAS(@Dev): 83.50 at epoch 151
+
+-----------------
+Starting epoch 156
+Train loss/token=0.6692, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.07s
+---
+UAS accuracy:	85.97
+LAS accuracy:	83.02
+Highest LAS(@Dev): 83.50 at epoch 151
+
+-----------------
+Starting epoch 157
+Train loss/token=0.6588, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.07s
+---
+UAS accuracy:	86.48
+LAS accuracy:	83.51
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 158
+Train loss/token=0.6400, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	86.36
+LAS accuracy:	83.37
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 159
+Train loss/token=0.6684, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	85.93
+LAS accuracy:	83.10
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 160
+Train loss/token=0.6560, time=26.70s
+Performance on Dev data
+Finish predictions on dev data in 23.03s
+---
+UAS accuracy:	86.37
+LAS accuracy:	83.38
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 161
+Train loss/token=0.6496, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	86.23
+LAS accuracy:	83.36
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 162
+Train loss/token=0.6392, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	85.91
+LAS accuracy:	83.00
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 163
+Train loss/token=0.6558, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 23.03s
+---
+UAS accuracy:	86.09
+LAS accuracy:	82.98
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 164
+Train loss/token=0.6381, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	86.23
+LAS accuracy:	83.38
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 165
+Train loss/token=0.6427, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	86.35
+LAS accuracy:	83.49
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 166
+Train loss/token=0.6540, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.02
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 167
+Train loss/token=0.6549, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	86.40
+LAS accuracy:	83.22
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 168
+Train loss/token=0.6416, time=26.52s
+Performance on Dev data
+Finish predictions on dev data in 23.16s
+---
+UAS accuracy:	86.16
+LAS accuracy:	83.18
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 169
+Train loss/token=0.6359, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	86.08
+LAS accuracy:	83.23
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 170
+Train loss/token=0.6159, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	85.60
+LAS accuracy:	82.67
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 171
+Train loss/token=0.6111, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	86.26
+LAS accuracy:	83.32
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 172
+Train loss/token=0.6385, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	86.31
+LAS accuracy:	83.36
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 173
+Train loss/token=0.6151, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	86.18
+LAS accuracy:	83.23
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 174
+Train loss/token=0.6286, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.17s
+---
+UAS accuracy:	86.41
+LAS accuracy:	83.45
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 175
+Train loss/token=0.6148, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	86.12
+LAS accuracy:	83.40
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 176
+Train loss/token=0.6189, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	86.38
+LAS accuracy:	83.46
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 177
+Train loss/token=0.6100, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	86.17
+LAS accuracy:	83.30
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 178
+Train loss/token=0.6241, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.96
+LAS accuracy:	83.21
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 179
+Train loss/token=0.6092, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.02
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 180
+Train loss/token=0.6184, time=26.38s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	86.11
+LAS accuracy:	83.16
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 181
+Train loss/token=0.5983, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	86.06
+LAS accuracy:	83.28
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 182
+Train loss/token=0.6280, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	86.14
+LAS accuracy:	83.19
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 183
+Train loss/token=0.6072, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	86.38
+LAS accuracy:	83.47
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 184
+Train loss/token=0.6075, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	86.16
+LAS accuracy:	83.30
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 185
+Train loss/token=0.5965, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.94
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 186
+Train loss/token=0.6008, time=26.40s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	86.24
+LAS accuracy:	83.30
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 187
+Train loss/token=0.5841, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	85.87
+LAS accuracy:	83.08
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 188
+Train loss/token=0.6091, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.85
+LAS accuracy:	83.04
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 189
+Train loss/token=0.5843, time=26.41s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	86.27
+LAS accuracy:	83.47
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 190
+Train loss/token=0.5829, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	86.28
+LAS accuracy:	83.32
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 191
+Train loss/token=0.5831, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	86.07
+LAS accuracy:	83.23
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 192
+Train loss/token=0.5724, time=26.62s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.52
+LAS accuracy:	82.58
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 193
+Train loss/token=0.5821, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	85.73
+LAS accuracy:	82.71
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 194
+Train loss/token=0.5973, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	86.12
+LAS accuracy:	83.30
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 195
+Train loss/token=0.5738, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.93
+LAS accuracy:	83.09
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 196
+Train loss/token=0.5949, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	86.23
+LAS accuracy:	83.40
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 197
+Train loss/token=0.5789, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	86.15
+LAS accuracy:	83.30
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 198
+Train loss/token=0.5812, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.20s
+---
+UAS accuracy:	86.05
+LAS accuracy:	83.23
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 199
+Train loss/token=0.5845, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	86.23
+LAS accuracy:	83.49
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 200
+Train loss/token=0.5864, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	86.10
+LAS accuracy:	83.14
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 201
+Train loss/token=0.5860, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.50
+LAS accuracy:	82.70
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 202
+Train loss/token=0.5674, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.91
+LAS accuracy:	82.95
+Highest LAS(@Dev): 83.51 at epoch 157
+
+-----------------
+Starting epoch 203
+Train loss/token=0.5649, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	86.37
+LAS accuracy:	83.62
+Highest LAS(@Dev): 83.62 at epoch 203
+
+-----------------
+Starting epoch 204
+Train loss/token=0.5660, time=26.44s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	85.82
+LAS accuracy:	82.97
+Highest LAS(@Dev): 83.62 at epoch 203
+
+-----------------
+Starting epoch 205
+Train loss/token=0.5752, time=26.45s
+Performance on Dev data
+Finish predictions on dev data in 23.10s
+---
+UAS accuracy:	86.39
+LAS accuracy:	83.58
+Highest LAS(@Dev): 83.62 at epoch 203
+
+-----------------
+Starting epoch 206
+Train loss/token=0.5597, time=26.44s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	86.01
+LAS accuracy:	83.20
+Highest LAS(@Dev): 83.62 at epoch 203
+
+-----------------
+Starting epoch 207
+Train loss/token=0.5808, time=26.40s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	86.05
+LAS accuracy:	83.08
+Highest LAS(@Dev): 83.62 at epoch 203
+
+-----------------
+Starting epoch 208
+Train loss/token=0.5532, time=26.44s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	86.05
+LAS accuracy:	83.31
+Highest LAS(@Dev): 83.62 at epoch 203
+
+-----------------
+Starting epoch 209
+Train loss/token=0.5444, time=26.44s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	86.57
+LAS accuracy:	83.78
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 210
+Train loss/token=0.5628, time=26.42s
+Performance on Dev data
+Finish predictions on dev data in 23.06s
+---
+UAS accuracy:	86.39
+LAS accuracy:	83.54
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 211
+Train loss/token=0.5601, time=26.42s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	85.93
+LAS accuracy:	83.09
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 212
+Train loss/token=0.5426, time=26.43s
+Performance on Dev data
+Finish predictions on dev data in 23.06s
+---
+UAS accuracy:	85.78
+LAS accuracy:	83.05
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 213
+Train loss/token=0.5534, time=26.42s
+Performance on Dev data
+Finish predictions on dev data in 23.07s
+---
+UAS accuracy:	85.85
+LAS accuracy:	83.04
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 214
+Train loss/token=0.5570, time=26.43s
+Performance on Dev data
+Finish predictions on dev data in 23.13s
+---
+UAS accuracy:	86.67
+LAS accuracy:	83.77
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 215
+Train loss/token=0.5624, time=26.41s
+Performance on Dev data
+Finish predictions on dev data in 23.06s
+---
+UAS accuracy:	86.47
+LAS accuracy:	83.72
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 216
+Train loss/token=0.5372, time=26.39s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.90
+LAS accuracy:	83.11
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 217
+Train loss/token=0.5572, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.74
+LAS accuracy:	82.94
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 218
+Train loss/token=0.5571, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.80
+LAS accuracy:	83.07
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 219
+Train loss/token=0.5400, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.82
+LAS accuracy:	83.12
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 220
+Train loss/token=0.5426, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.43
+LAS accuracy:	83.53
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 221
+Train loss/token=0.5348, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.04
+LAS accuracy:	83.35
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 222
+Train loss/token=0.5480, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.14
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 223
+Train loss/token=0.5448, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.18
+LAS accuracy:	83.25
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 224
+Train loss/token=0.5541, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.28
+LAS accuracy:	83.34
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 225
+Train loss/token=0.5361, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.79
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 226
+Train loss/token=0.5379, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.02
+LAS accuracy:	83.02
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 227
+Train loss/token=0.5414, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.05
+LAS accuracy:	83.28
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 228
+Train loss/token=0.5350, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.99
+LAS accuracy:	83.28
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 229
+Train loss/token=0.5185, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.52
+LAS accuracy:	82.66
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 230
+Train loss/token=0.5374, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.89
+LAS accuracy:	83.05
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 231
+Train loss/token=0.5215, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.82
+LAS accuracy:	83.08
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 232
+Train loss/token=0.5162, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.15
+LAS accuracy:	83.29
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 233
+Train loss/token=0.5319, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.07
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 234
+Train loss/token=0.5267, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.97
+LAS accuracy:	83.23
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 235
+Train loss/token=0.5130, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.25
+LAS accuracy:	83.42
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 236
+Train loss/token=0.5196, time=26.38s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.72
+LAS accuracy:	82.95
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 237
+Train loss/token=0.5098, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.93
+LAS accuracy:	82.98
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 238
+Train loss/token=0.5075, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.69
+LAS accuracy:	82.77
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 239
+Train loss/token=0.5324, time=26.39s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.92
+LAS accuracy:	83.09
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 240
+Train loss/token=0.5187, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.96
+LAS accuracy:	83.19
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 241
+Train loss/token=0.5088, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.17
+LAS accuracy:	83.32
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 242
+Train loss/token=0.5183, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	86.05
+LAS accuracy:	83.40
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 243
+Train loss/token=0.5255, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.26
+LAS accuracy:	83.53
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 244
+Train loss/token=0.5177, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.22
+LAS accuracy:	83.29
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 245
+Train loss/token=0.5208, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.97s
+---
+UAS accuracy:	86.11
+LAS accuracy:	83.26
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 246
+Train loss/token=0.5032, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.94
+LAS accuracy:	83.09
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 247
+Train loss/token=0.4924, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.25
+LAS accuracy:	83.36
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 248
+Train loss/token=0.4974, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	86.35
+LAS accuracy:	83.43
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 249
+Train loss/token=0.5041, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.15
+LAS accuracy:	83.31
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 250
+Train loss/token=0.5101, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.15
+LAS accuracy:	83.40
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 251
+Train loss/token=0.5100, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.05
+LAS accuracy:	83.19
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 252
+Train loss/token=0.5086, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.13
+LAS accuracy:	83.19
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 253
+Train loss/token=0.5136, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.16
+LAS accuracy:	83.28
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 254
+Train loss/token=0.5026, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.13
+LAS accuracy:	83.49
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 255
+Train loss/token=0.5074, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.43
+LAS accuracy:	83.22
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 256
+Train loss/token=0.5037, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.12
+LAS accuracy:	83.14
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 257
+Train loss/token=0.4955, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.02
+LAS accuracy:	83.20
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 258
+Train loss/token=0.4924, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.78
+LAS accuracy:	83.00
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 259
+Train loss/token=0.4845, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.66
+LAS accuracy:	83.01
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 260
+Train loss/token=0.4877, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.32
+LAS accuracy:	83.47
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 261
+Train loss/token=0.4901, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.98
+LAS accuracy:	83.29
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 262
+Train loss/token=0.4891, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.08
+LAS accuracy:	83.20
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 263
+Train loss/token=0.4891, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.91
+LAS accuracy:	83.09
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 264
+Train loss/token=0.4964, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.94
+LAS accuracy:	82.99
+Highest LAS(@Dev): 83.78 at epoch 209
+
+-----------------
+Starting epoch 265
+Train loss/token=0.4858, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.87
+LAS accuracy:	84.10
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 266
+Train loss/token=0.4961, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.22
+LAS accuracy:	83.43
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 267
+Train loss/token=0.4818, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.09
+LAS accuracy:	83.36
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 268
+Train loss/token=0.4894, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.09
+LAS accuracy:	83.25
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 269
+Train loss/token=0.4804, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.93
+LAS accuracy:	83.15
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 270
+Train loss/token=0.4613, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.92
+LAS accuracy:	83.05
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 271
+Train loss/token=0.4890, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.04
+LAS accuracy:	83.19
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 272
+Train loss/token=0.4876, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.12
+LAS accuracy:	83.43
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 273
+Train loss/token=0.4725, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.14
+LAS accuracy:	83.20
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 274
+Train loss/token=0.4731, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.06
+LAS accuracy:	83.30
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 275
+Train loss/token=0.4708, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.84
+LAS accuracy:	83.05
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 276
+Train loss/token=0.4729, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.68
+LAS accuracy:	84.06
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 277
+Train loss/token=0.4723, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.57
+LAS accuracy:	83.71
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 278
+Train loss/token=0.4840, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.45
+LAS accuracy:	83.47
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 279
+Train loss/token=0.4624, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.38
+LAS accuracy:	83.68
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 280
+Train loss/token=0.4806, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.93
+LAS accuracy:	83.09
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 281
+Train loss/token=0.4747, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.20
+LAS accuracy:	83.50
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 282
+Train loss/token=0.4759, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.55
+LAS accuracy:	83.70
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 283
+Train loss/token=0.4669, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.79
+LAS accuracy:	82.98
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 284
+Train loss/token=0.4570, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.19
+LAS accuracy:	83.31
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 285
+Train loss/token=0.4718, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.11
+LAS accuracy:	83.44
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 286
+Train loss/token=0.4660, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.01
+LAS accuracy:	83.21
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 287
+Train loss/token=0.4571, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.66
+LAS accuracy:	82.86
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 288
+Train loss/token=0.4589, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.78
+LAS accuracy:	83.04
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 289
+Train loss/token=0.4662, time=26.38s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.06
+LAS accuracy:	83.29
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 290
+Train loss/token=0.4616, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.17
+LAS accuracy:	83.40
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 291
+Train loss/token=0.4692, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.96
+LAS accuracy:	83.12
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 292
+Train loss/token=0.4490, time=26.38s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.15
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 293
+Train loss/token=0.4646, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.02
+LAS accuracy:	83.02
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 294
+Train loss/token=0.4654, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.36
+LAS accuracy:	83.44
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 295
+Train loss/token=0.4496, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	86.05
+LAS accuracy:	83.34
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 296
+Train loss/token=0.4625, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.38
+LAS accuracy:	83.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 297
+Train loss/token=0.4608, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.90
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 298
+Train loss/token=0.4542, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.97s
+---
+UAS accuracy:	85.47
+LAS accuracy:	82.94
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 299
+Train loss/token=0.4609, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.86
+LAS accuracy:	83.18
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 300
+Train loss/token=0.4531, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.03
+LAS accuracy:	83.44
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 301
+Train loss/token=0.4515, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.97
+LAS accuracy:	83.20
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 302
+Train loss/token=0.4432, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.82
+LAS accuracy:	82.77
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 303
+Train loss/token=0.4361, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.52
+LAS accuracy:	82.75
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 304
+Train loss/token=0.4642, time=26.32s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.90
+LAS accuracy:	82.99
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 305
+Train loss/token=0.4495, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.12
+LAS accuracy:	83.25
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 306
+Train loss/token=0.4428, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.74
+LAS accuracy:	82.93
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 307
+Train loss/token=0.4540, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.08
+LAS accuracy:	83.25
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 308
+Train loss/token=0.4606, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.24
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 309
+Train loss/token=0.4385, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.26
+LAS accuracy:	83.46
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 310
+Train loss/token=0.4424, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.42
+LAS accuracy:	83.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 311
+Train loss/token=0.4501, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.83
+LAS accuracy:	82.98
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 312
+Train loss/token=0.4267, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.93
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 313
+Train loss/token=0.4592, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.14
+LAS accuracy:	83.37
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 314
+Train loss/token=0.4520, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.52
+LAS accuracy:	83.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 315
+Train loss/token=0.4444, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.87
+LAS accuracy:	83.05
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 316
+Train loss/token=0.4471, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.25
+LAS accuracy:	83.50
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 317
+Train loss/token=0.4459, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.91
+LAS accuracy:	83.11
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 318
+Train loss/token=0.4339, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.06
+LAS accuracy:	83.34
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 319
+Train loss/token=0.4406, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.83
+LAS accuracy:	83.02
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 320
+Train loss/token=0.4384, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.03
+LAS accuracy:	83.29
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 321
+Train loss/token=0.4305, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.99
+LAS accuracy:	83.23
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 322
+Train loss/token=0.4364, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.03
+LAS accuracy:	83.19
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 323
+Train loss/token=0.4257, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.30
+LAS accuracy:	83.48
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 324
+Train loss/token=0.4359, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.25
+LAS accuracy:	83.52
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 325
+Train loss/token=0.4264, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.01
+LAS accuracy:	83.41
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 326
+Train loss/token=0.4316, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.14
+LAS accuracy:	83.28
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 327
+Train loss/token=0.4290, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.97
+LAS accuracy:	83.09
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 328
+Train loss/token=0.4329, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.92
+LAS accuracy:	83.20
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 329
+Train loss/token=0.4358, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.55
+LAS accuracy:	82.98
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 330
+Train loss/token=0.4418, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.23
+LAS accuracy:	83.36
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 331
+Train loss/token=0.4394, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.86
+LAS accuracy:	82.86
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 332
+Train loss/token=0.4533, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.04
+LAS accuracy:	83.15
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 333
+Train loss/token=0.4297, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.07
+LAS accuracy:	83.15
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 334
+Train loss/token=0.4203, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.14
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 335
+Train loss/token=0.4257, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.99
+LAS accuracy:	83.21
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 336
+Train loss/token=0.4181, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.58
+LAS accuracy:	82.79
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 337
+Train loss/token=0.4298, time=26.32s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.73
+LAS accuracy:	83.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 338
+Train loss/token=0.4360, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.63
+LAS accuracy:	82.98
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 339
+Train loss/token=0.4273, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.99
+LAS accuracy:	83.20
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 340
+Train loss/token=0.4217, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.36
+LAS accuracy:	82.76
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 341
+Train loss/token=0.4251, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.37
+LAS accuracy:	83.62
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 342
+Train loss/token=0.4243, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.72
+LAS accuracy:	82.83
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 343
+Train loss/token=0.4164, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.27
+LAS accuracy:	83.24
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 344
+Train loss/token=0.4087, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.39
+LAS accuracy:	83.41
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 345
+Train loss/token=0.4155, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.12
+LAS accuracy:	83.33
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 346
+Train loss/token=0.4130, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.87
+LAS accuracy:	82.91
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 347
+Train loss/token=0.4102, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.87
+LAS accuracy:	83.12
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 348
+Train loss/token=0.4311, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.99
+LAS accuracy:	83.17
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 349
+Train loss/token=0.4204, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.15
+LAS accuracy:	83.33
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 350
+Train loss/token=0.4082, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.02
+LAS accuracy:	83.21
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 351
+Train loss/token=0.4141, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.28
+LAS accuracy:	83.55
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 352
+Train loss/token=0.4123, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.35
+LAS accuracy:	83.47
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 353
+Train loss/token=0.4234, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.94
+LAS accuracy:	83.22
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 354
+Train loss/token=0.4250, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	86.18
+LAS accuracy:	83.13
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 355
+Train loss/token=0.4144, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.01
+LAS accuracy:	83.24
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 356
+Train loss/token=0.4090, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.33
+LAS accuracy:	83.54
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 357
+Train loss/token=0.4193, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.82
+LAS accuracy:	83.04
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 358
+Train loss/token=0.4293, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.17
+LAS accuracy:	83.46
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 359
+Train loss/token=0.4157, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.12
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 360
+Train loss/token=0.4277, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.80
+LAS accuracy:	83.09
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 361
+Train loss/token=0.4168, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.12
+LAS accuracy:	83.48
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 362
+Train loss/token=0.4023, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.82
+LAS accuracy:	82.96
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 363
+Train loss/token=0.4194, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.24
+LAS accuracy:	83.38
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 364
+Train loss/token=0.4112, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.36
+LAS accuracy:	83.55
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 365
+Train loss/token=0.3968, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.06
+LAS accuracy:	83.23
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 366
+Train loss/token=0.4089, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.69
+LAS accuracy:	82.74
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 367
+Train loss/token=0.3978, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.14
+LAS accuracy:	83.39
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 368
+Train loss/token=0.4275, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.98
+LAS accuracy:	83.20
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 369
+Train loss/token=0.3898, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.02
+LAS accuracy:	83.21
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 370
+Train loss/token=0.3967, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.81
+LAS accuracy:	83.11
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 371
+Train loss/token=0.4121, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.13
+LAS accuracy:	83.26
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 372
+Train loss/token=0.3903, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.74
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 373
+Train loss/token=0.4066, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.16
+LAS accuracy:	83.24
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 374
+Train loss/token=0.4029, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.91
+LAS accuracy:	83.19
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 375
+Train loss/token=0.4069, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.15
+LAS accuracy:	83.41
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 376
+Train loss/token=0.4038, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.01
+LAS accuracy:	83.15
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 377
+Train loss/token=0.3948, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.71
+LAS accuracy:	82.88
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 378
+Train loss/token=0.4011, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.83
+LAS accuracy:	83.25
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 379
+Train loss/token=0.3941, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.83
+LAS accuracy:	82.94
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 380
+Train loss/token=0.3952, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.04
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 381
+Train loss/token=0.3968, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.30
+LAS accuracy:	83.46
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 382
+Train loss/token=0.3978, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.44
+LAS accuracy:	83.66
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 383
+Train loss/token=0.3884, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.07
+LAS accuracy:	83.20
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 384
+Train loss/token=0.4047, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.97
+LAS accuracy:	83.12
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 385
+Train loss/token=0.3999, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.88
+LAS accuracy:	83.01
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 386
+Train loss/token=0.3974, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.34
+LAS accuracy:	83.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 387
+Train loss/token=0.3870, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.00
+LAS accuracy:	83.15
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 388
+Train loss/token=0.3802, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.79
+LAS accuracy:	82.96
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 389
+Train loss/token=0.3888, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.12
+LAS accuracy:	83.47
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 390
+Train loss/token=0.3993, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.97
+LAS accuracy:	83.20
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 391
+Train loss/token=0.3931, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.79
+LAS accuracy:	83.03
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 392
+Train loss/token=0.3864, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.33
+LAS accuracy:	83.64
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 393
+Train loss/token=0.3894, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.98
+LAS accuracy:	83.30
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 394
+Train loss/token=0.3817, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.84
+LAS accuracy:	83.02
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 395
+Train loss/token=0.3978, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.66
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 396
+Train loss/token=0.4026, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.14
+LAS accuracy:	83.31
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 397
+Train loss/token=0.3857, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.11
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 398
+Train loss/token=0.3867, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.13
+LAS accuracy:	83.29
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 399
+Train loss/token=0.3961, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.83
+LAS accuracy:	83.04
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 400
+Train loss/token=0.3880, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.51
+LAS accuracy:	82.83
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 401
+Train loss/token=0.3927, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.47
+LAS accuracy:	82.65
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 402
+Train loss/token=0.3839, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.45
+LAS accuracy:	83.57
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 403
+Train loss/token=0.3882, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.03
+LAS accuracy:	83.30
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 404
+Train loss/token=0.3962, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.54
+LAS accuracy:	82.63
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 405
+Train loss/token=0.3892, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.14
+LAS accuracy:	83.20
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 406
+Train loss/token=0.3823, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.06
+LAS accuracy:	83.13
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 407
+Train loss/token=0.3845, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	86.24
+LAS accuracy:	83.47
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 408
+Train loss/token=0.3790, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.49
+LAS accuracy:	83.75
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 409
+Train loss/token=0.3869, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.34
+LAS accuracy:	83.45
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 410
+Train loss/token=0.3834, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.93
+LAS accuracy:	83.15
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 411
+Train loss/token=0.3864, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.22
+LAS accuracy:	83.38
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 412
+Train loss/token=0.3837, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.30
+LAS accuracy:	83.31
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 413
+Train loss/token=0.3886, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.96
+LAS accuracy:	83.16
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 414
+Train loss/token=0.3771, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.26
+LAS accuracy:	83.39
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 415
+Train loss/token=0.3726, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.98
+LAS accuracy:	83.40
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 416
+Train loss/token=0.3879, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.17
+LAS accuracy:	83.35
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 417
+Train loss/token=0.3794, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.27
+LAS accuracy:	83.49
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 418
+Train loss/token=0.3858, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.04
+LAS accuracy:	83.08
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 419
+Train loss/token=0.3665, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.19
+LAS accuracy:	83.35
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 420
+Train loss/token=0.3847, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.94
+LAS accuracy:	83.01
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 421
+Train loss/token=0.3766, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.66
+LAS accuracy:	82.86
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 422
+Train loss/token=0.3909, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.16
+LAS accuracy:	83.26
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 423
+Train loss/token=0.3700, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.22
+LAS accuracy:	83.34
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 424
+Train loss/token=0.3684, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.06
+LAS accuracy:	83.26
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 425
+Train loss/token=0.3799, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.83
+LAS accuracy:	83.12
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 426
+Train loss/token=0.3814, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.80
+LAS accuracy:	83.01
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 427
+Train loss/token=0.3611, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.13
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 428
+Train loss/token=0.3873, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.48
+LAS accuracy:	82.72
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 429
+Train loss/token=0.3726, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.26
+LAS accuracy:	83.50
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 430
+Train loss/token=0.3773, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.59
+LAS accuracy:	83.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 431
+Train loss/token=0.3723, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.12
+LAS accuracy:	83.21
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 432
+Train loss/token=0.3658, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.01
+LAS accuracy:	83.13
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 433
+Train loss/token=0.3781, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.17
+LAS accuracy:	83.33
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 434
+Train loss/token=0.3719, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.74
+LAS accuracy:	82.97
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 435
+Train loss/token=0.3754, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.57
+LAS accuracy:	82.77
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 436
+Train loss/token=0.3629, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.11
+LAS accuracy:	83.38
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 437
+Train loss/token=0.3687, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.31
+LAS accuracy:	83.60
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 438
+Train loss/token=0.3698, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.98
+LAS accuracy:	83.22
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 439
+Train loss/token=0.3615, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.25
+LAS accuracy:	83.63
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 440
+Train loss/token=0.3604, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.10
+LAS accuracy:	83.12
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 441
+Train loss/token=0.3607, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.78
+LAS accuracy:	82.87
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 442
+Train loss/token=0.3730, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.54
+LAS accuracy:	82.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 443
+Train loss/token=0.3620, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.78
+LAS accuracy:	83.07
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 444
+Train loss/token=0.3758, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.86
+LAS accuracy:	82.93
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 445
+Train loss/token=0.3667, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.58
+LAS accuracy:	82.76
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 446
+Train loss/token=0.3651, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.89
+LAS accuracy:	82.89
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 447
+Train loss/token=0.3633, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.08
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 448
+Train loss/token=0.3697, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.93
+LAS accuracy:	83.03
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 449
+Train loss/token=0.3585, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.70
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 450
+Train loss/token=0.3576, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.37
+LAS accuracy:	82.53
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 451
+Train loss/token=0.3782, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.54
+LAS accuracy:	82.63
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 452
+Train loss/token=0.3706, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.02
+LAS accuracy:	83.30
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 453
+Train loss/token=0.3609, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.87
+LAS accuracy:	83.17
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 454
+Train loss/token=0.3727, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.66
+LAS accuracy:	82.86
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 455
+Train loss/token=0.3642, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.88
+LAS accuracy:	82.92
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 456
+Train loss/token=0.3694, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.75
+LAS accuracy:	82.91
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 457
+Train loss/token=0.3678, time=26.38s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.09
+LAS accuracy:	83.06
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 458
+Train loss/token=0.3609, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.03s
+---
+UAS accuracy:	85.97
+LAS accuracy:	83.15
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 459
+Train loss/token=0.3669, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.83
+LAS accuracy:	82.81
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 460
+Train loss/token=0.3595, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.97
+LAS accuracy:	83.25
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 461
+Train loss/token=0.3709, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.12
+LAS accuracy:	83.22
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 462
+Train loss/token=0.3718, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.31
+LAS accuracy:	83.44
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 463
+Train loss/token=0.3853, time=26.38s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.29
+LAS accuracy:	83.63
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 464
+Train loss/token=0.3659, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.04
+LAS accuracy:	83.23
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 465
+Train loss/token=0.3577, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.91
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 466
+Train loss/token=0.3569, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.66
+LAS accuracy:	82.87
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 467
+Train loss/token=0.3510, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.98
+LAS accuracy:	83.03
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 468
+Train loss/token=0.3615, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.60
+LAS accuracy:	82.88
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 469
+Train loss/token=0.3660, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.51
+LAS accuracy:	82.76
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 470
+Train loss/token=0.3526, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.67
+LAS accuracy:	82.90
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 471
+Train loss/token=0.3487, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.65
+LAS accuracy:	82.95
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 472
+Train loss/token=0.3474, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.97s
+---
+UAS accuracy:	85.65
+LAS accuracy:	82.97
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 473
+Train loss/token=0.3640, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.69
+LAS accuracy:	82.68
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 474
+Train loss/token=0.3617, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.15
+LAS accuracy:	83.46
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 475
+Train loss/token=0.3648, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.88
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 476
+Train loss/token=0.3570, time=26.40s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.81
+LAS accuracy:	83.08
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 477
+Train loss/token=0.3629, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.25
+LAS accuracy:	83.22
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 478
+Train loss/token=0.3606, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.22
+LAS accuracy:	83.20
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 479
+Train loss/token=0.3641, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.35
+LAS accuracy:	82.58
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 480
+Train loss/token=0.3611, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.63
+LAS accuracy:	82.70
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 481
+Train loss/token=0.3649, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.77
+LAS accuracy:	82.78
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 482
+Train loss/token=0.3395, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.39
+LAS accuracy:	82.55
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 483
+Train loss/token=0.3569, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.94
+LAS accuracy:	82.97
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 484
+Train loss/token=0.3579, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.87
+LAS accuracy:	83.08
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 485
+Train loss/token=0.3592, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.68
+LAS accuracy:	82.92
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 486
+Train loss/token=0.3420, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.89
+LAS accuracy:	83.06
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 487
+Train loss/token=0.3514, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.87
+LAS accuracy:	83.09
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 488
+Train loss/token=0.3493, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.83
+LAS accuracy:	82.91
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 489
+Train loss/token=0.3438, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.58
+LAS accuracy:	82.80
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 490
+Train loss/token=0.3392, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	86.07
+LAS accuracy:	83.34
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 491
+Train loss/token=0.3451, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.69
+LAS accuracy:	82.91
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 492
+Train loss/token=0.3402, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.75
+LAS accuracy:	82.71
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 493
+Train loss/token=0.3494, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.91
+LAS accuracy:	83.09
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 494
+Train loss/token=0.3424, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.71
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 495
+Train loss/token=0.3585, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.62
+LAS accuracy:	82.75
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 496
+Train loss/token=0.3469, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.93
+LAS accuracy:	82.95
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 497
+Train loss/token=0.3442, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.51
+LAS accuracy:	82.65
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 498
+Train loss/token=0.3411, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.51
+LAS accuracy:	82.60
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 499
+Train loss/token=0.3581, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.68
+LAS accuracy:	82.70
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 500
+Train loss/token=0.3484, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.68
+LAS accuracy:	82.76
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 501
+Train loss/token=0.3504, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.07
+LAS accuracy:	83.17
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 502
+Train loss/token=0.3532, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.89
+LAS accuracy:	82.90
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 503
+Train loss/token=0.3490, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.83
+LAS accuracy:	82.84
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 504
+Train loss/token=0.3428, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.55
+LAS accuracy:	82.49
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 505
+Train loss/token=0.3561, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.71
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 506
+Train loss/token=0.3511, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.74
+LAS accuracy:	83.00
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 507
+Train loss/token=0.3439, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.93
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 508
+Train loss/token=0.3404, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.93
+LAS accuracy:	82.95
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 509
+Train loss/token=0.3602, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.48
+LAS accuracy:	82.62
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 510
+Train loss/token=0.3409, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.63
+LAS accuracy:	82.75
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 511
+Train loss/token=0.3407, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.57
+LAS accuracy:	82.87
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 512
+Train loss/token=0.3375, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.67
+LAS accuracy:	82.77
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 513
+Train loss/token=0.3424, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.86
+LAS accuracy:	83.09
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 514
+Train loss/token=0.3263, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.54
+LAS accuracy:	82.87
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 515
+Train loss/token=0.3313, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.92
+LAS accuracy:	82.98
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 516
+Train loss/token=0.3344, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.06
+LAS accuracy:	83.10
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 517
+Train loss/token=0.3521, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.42
+LAS accuracy:	82.76
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 518
+Train loss/token=0.3425, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.65
+LAS accuracy:	82.88
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 519
+Train loss/token=0.3393, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.02
+LAS accuracy:	83.15
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 520
+Train loss/token=0.3400, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.51
+LAS accuracy:	82.77
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 521
+Train loss/token=0.3294, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.39
+LAS accuracy:	82.61
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 522
+Train loss/token=0.3453, time=26.38s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.96
+LAS accuracy:	83.24
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 523
+Train loss/token=0.3367, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.73
+LAS accuracy:	82.89
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 524
+Train loss/token=0.3520, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.78
+LAS accuracy:	82.78
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 525
+Train loss/token=0.3278, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.74
+LAS accuracy:	82.74
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 526
+Train loss/token=0.3560, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.97
+LAS accuracy:	83.09
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 527
+Train loss/token=0.3280, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.92
+LAS accuracy:	83.09
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 528
+Train loss/token=0.3399, time=26.39s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.45
+LAS accuracy:	82.74
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 529
+Train loss/token=0.3350, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.70
+LAS accuracy:	83.05
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 530
+Train loss/token=0.3190, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.41
+LAS accuracy:	82.60
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 531
+Train loss/token=0.3380, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.77
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 532
+Train loss/token=0.3302, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.57
+LAS accuracy:	82.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 533
+Train loss/token=0.3249, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.78
+LAS accuracy:	82.98
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 534
+Train loss/token=0.3244, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.97
+LAS accuracy:	83.10
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 535
+Train loss/token=0.3278, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.86
+LAS accuracy:	82.92
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 536
+Train loss/token=0.3181, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.00
+LAS accuracy:	83.17
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 537
+Train loss/token=0.3245, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.73
+LAS accuracy:	83.01
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 538
+Train loss/token=0.3327, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.70
+LAS accuracy:	82.85
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 539
+Train loss/token=0.3195, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.70
+LAS accuracy:	82.97
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 540
+Train loss/token=0.3305, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.61
+LAS accuracy:	82.69
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 541
+Train loss/token=0.3306, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.10
+LAS accuracy:	83.40
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 542
+Train loss/token=0.3420, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.60
+LAS accuracy:	82.66
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 543
+Train loss/token=0.3199, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	86.05
+LAS accuracy:	83.25
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 544
+Train loss/token=0.3328, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.72
+LAS accuracy:	82.85
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 545
+Train loss/token=0.3287, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.31
+LAS accuracy:	82.60
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 546
+Train loss/token=0.3265, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.35
+LAS accuracy:	82.56
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 547
+Train loss/token=0.3348, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.61
+LAS accuracy:	82.75
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 548
+Train loss/token=0.3229, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.77
+LAS accuracy:	83.00
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 549
+Train loss/token=0.3118, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.50
+LAS accuracy:	82.77
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 550
+Train loss/token=0.3251, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.80
+LAS accuracy:	82.85
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 551
+Train loss/token=0.3271, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.66
+LAS accuracy:	82.91
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 552
+Train loss/token=0.3256, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.45
+LAS accuracy:	82.55
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 553
+Train loss/token=0.3284, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.89
+LAS accuracy:	82.97
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 554
+Train loss/token=0.3221, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.59
+LAS accuracy:	82.62
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 555
+Train loss/token=0.3394, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.69
+LAS accuracy:	82.83
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 556
+Train loss/token=0.3310, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.66
+LAS accuracy:	82.81
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 557
+Train loss/token=0.3296, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.44
+LAS accuracy:	82.75
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 558
+Train loss/token=0.3113, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.81
+LAS accuracy:	83.15
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 559
+Train loss/token=0.3188, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.47
+LAS accuracy:	82.56
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 560
+Train loss/token=0.3242, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.59
+LAS accuracy:	82.76
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 561
+Train loss/token=0.3370, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.73
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 562
+Train loss/token=0.3221, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.41
+LAS accuracy:	82.54
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 563
+Train loss/token=0.3355, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.50
+LAS accuracy:	82.87
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 564
+Train loss/token=0.3297, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.52
+LAS accuracy:	82.73
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 565
+Train loss/token=0.3256, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.91
+LAS accuracy:	82.98
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 566
+Train loss/token=0.3252, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.62
+LAS accuracy:	82.72
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 567
+Train loss/token=0.3122, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.84
+LAS accuracy:	82.96
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 568
+Train loss/token=0.3206, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.27
+LAS accuracy:	82.36
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 569
+Train loss/token=0.3156, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.90
+LAS accuracy:	83.02
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 570
+Train loss/token=0.3131, time=26.32s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.87
+LAS accuracy:	83.00
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 571
+Train loss/token=0.3255, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.86
+LAS accuracy:	82.97
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 572
+Train loss/token=0.3168, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.87
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 573
+Train loss/token=0.3277, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.56
+LAS accuracy:	82.78
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 574
+Train loss/token=0.3260, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.48
+LAS accuracy:	82.73
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 575
+Train loss/token=0.3239, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.39
+LAS accuracy:	82.52
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 576
+Train loss/token=0.3358, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.97
+LAS accuracy:	83.08
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 577
+Train loss/token=0.3123, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.21
+LAS accuracy:	83.26
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 578
+Train loss/token=0.3276, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.56
+LAS accuracy:	82.62
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 579
+Train loss/token=0.3091, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.65
+LAS accuracy:	82.62
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 580
+Train loss/token=0.3073, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.37
+LAS accuracy:	82.42
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 581
+Train loss/token=0.3124, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.77
+LAS accuracy:	82.76
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 582
+Train loss/token=0.3201, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.66
+LAS accuracy:	82.80
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 583
+Train loss/token=0.3243, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.38
+LAS accuracy:	82.70
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 584
+Train loss/token=0.3244, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.93
+LAS accuracy:	82.99
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 585
+Train loss/token=0.3283, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.73
+LAS accuracy:	82.82
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 586
+Train loss/token=0.3218, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.72
+LAS accuracy:	82.85
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 587
+Train loss/token=0.3211, time=26.36s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.63
+LAS accuracy:	82.83
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 588
+Train loss/token=0.3085, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.45
+LAS accuracy:	82.54
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 589
+Train loss/token=0.3146, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.59
+LAS accuracy:	82.57
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 590
+Train loss/token=0.3282, time=26.38s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.84
+LAS accuracy:	82.86
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 591
+Train loss/token=0.3006, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.54
+LAS accuracy:	82.55
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 592
+Train loss/token=0.3306, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.89
+LAS accuracy:	82.96
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 593
+Train loss/token=0.3215, time=26.38s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.69
+LAS accuracy:	82.76
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 594
+Train loss/token=0.3075, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.63
+LAS accuracy:	82.88
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 595
+Train loss/token=0.3206, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.89
+LAS accuracy:	83.07
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 596
+Train loss/token=0.3219, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.82
+LAS accuracy:	83.04
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 597
+Train loss/token=0.3255, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.89
+LAS accuracy:	82.97
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 598
+Train loss/token=0.3287, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.38
+LAS accuracy:	82.48
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 599
+Train loss/token=0.3209, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.70
+LAS accuracy:	82.76
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 600
+Train loss/token=0.3185, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.83
+LAS accuracy:	82.84
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 601
+Train loss/token=0.3213, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.78
+LAS accuracy:	82.91
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 602
+Train loss/token=0.3136, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.63
+LAS accuracy:	82.74
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 603
+Train loss/token=0.3019, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.82
+LAS accuracy:	82.81
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 604
+Train loss/token=0.3220, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.88
+LAS accuracy:	83.14
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 605
+Train loss/token=0.3156, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.58
+LAS accuracy:	82.78
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 606
+Train loss/token=0.3086, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.74
+LAS accuracy:	82.90
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 607
+Train loss/token=0.3179, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.89
+LAS accuracy:	83.04
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 608
+Train loss/token=0.3096, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.50
+LAS accuracy:	82.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 609
+Train loss/token=0.3067, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.75
+LAS accuracy:	82.71
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 610
+Train loss/token=0.3106, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.85
+LAS accuracy:	83.03
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 611
+Train loss/token=0.3157, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.88
+LAS accuracy:	82.90
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 612
+Train loss/token=0.2995, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.62
+LAS accuracy:	82.73
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 613
+Train loss/token=0.3020, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.94
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 614
+Train loss/token=0.3148, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.54
+LAS accuracy:	82.58
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 615
+Train loss/token=0.3081, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.76
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 616
+Train loss/token=0.3134, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.71
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 617
+Train loss/token=0.2971, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.85
+LAS accuracy:	82.90
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 618
+Train loss/token=0.3085, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.39
+LAS accuracy:	82.62
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 619
+Train loss/token=0.3146, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.52
+LAS accuracy:	82.63
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 620
+Train loss/token=0.3223, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.72
+LAS accuracy:	83.07
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 621
+Train loss/token=0.3107, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.73
+LAS accuracy:	82.85
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 622
+Train loss/token=0.3063, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.11
+LAS accuracy:	82.99
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 623
+Train loss/token=0.2879, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.88
+LAS accuracy:	82.97
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 624
+Train loss/token=0.3058, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.76
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 625
+Train loss/token=0.3053, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.46
+LAS accuracy:	82.47
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 626
+Train loss/token=0.3095, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.85
+LAS accuracy:	82.89
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 627
+Train loss/token=0.2979, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.91
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 628
+Train loss/token=0.3106, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.88
+LAS accuracy:	82.93
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 629
+Train loss/token=0.3150, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.54
+LAS accuracy:	82.60
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 630
+Train loss/token=0.3050, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.60
+LAS accuracy:	82.61
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 631
+Train loss/token=0.3040, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.39
+LAS accuracy:	82.52
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 632
+Train loss/token=0.3077, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.48
+LAS accuracy:	82.46
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 633
+Train loss/token=0.3097, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.72
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 634
+Train loss/token=0.3006, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.25
+LAS accuracy:	82.29
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 635
+Train loss/token=0.3011, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.70
+LAS accuracy:	82.74
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 636
+Train loss/token=0.2949, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	86.05
+LAS accuracy:	83.05
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 637
+Train loss/token=0.3141, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.69
+LAS accuracy:	82.80
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 638
+Train loss/token=0.3008, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.94
+LAS accuracy:	83.10
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 639
+Train loss/token=0.3045, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.65
+LAS accuracy:	82.59
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 640
+Train loss/token=0.3000, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.60
+LAS accuracy:	82.64
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 641
+Train loss/token=0.3145, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.74
+LAS accuracy:	82.99
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 642
+Train loss/token=0.2943, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.82
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 643
+Train loss/token=0.3060, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.61
+LAS accuracy:	82.81
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 644
+Train loss/token=0.3067, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.68
+LAS accuracy:	82.84
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 645
+Train loss/token=0.3007, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.44
+LAS accuracy:	82.49
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 646
+Train loss/token=0.3060, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.57
+LAS accuracy:	82.85
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 647
+Train loss/token=0.3257, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.35
+LAS accuracy:	82.37
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 648
+Train loss/token=0.2976, time=26.42s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.67
+LAS accuracy:	82.84
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 649
+Train loss/token=0.2919, time=26.45s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	85.85
+LAS accuracy:	82.70
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 650
+Train loss/token=0.3060, time=26.46s
+Performance on Dev data
+Finish predictions on dev data in 23.07s
+---
+UAS accuracy:	85.86
+LAS accuracy:	83.03
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 651
+Train loss/token=0.2939, time=26.41s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.66
+LAS accuracy:	82.94
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 652
+Train loss/token=0.2935, time=26.46s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	85.89
+LAS accuracy:	82.81
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 653
+Train loss/token=0.2981, time=26.39s
+Performance on Dev data
+Finish predictions on dev data in 23.06s
+---
+UAS accuracy:	85.68
+LAS accuracy:	82.65
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 654
+Train loss/token=0.3136, time=26.40s
+Performance on Dev data
+Finish predictions on dev data in 23.06s
+---
+UAS accuracy:	85.65
+LAS accuracy:	82.94
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 655
+Train loss/token=0.3054, time=26.40s
+Performance on Dev data
+Finish predictions on dev data in 23.06s
+---
+UAS accuracy:	85.43
+LAS accuracy:	82.54
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 656
+Train loss/token=0.3100, time=26.44s
+Performance on Dev data
+Finish predictions on dev data in 23.07s
+---
+UAS accuracy:	85.36
+LAS accuracy:	82.69
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 657
+Train loss/token=0.3106, time=26.40s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	85.51
+LAS accuracy:	82.71
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 658
+Train loss/token=0.3084, time=26.43s
+Performance on Dev data
+Finish predictions on dev data in 23.07s
+---
+UAS accuracy:	85.16
+LAS accuracy:	82.60
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 659
+Train loss/token=0.2989, time=26.43s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	85.79
+LAS accuracy:	82.77
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 660
+Train loss/token=0.2977, time=26.45s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	85.68
+LAS accuracy:	82.72
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 661
+Train loss/token=0.3078, time=26.43s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.81
+LAS accuracy:	82.98
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 662
+Train loss/token=0.2948, time=26.45s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	85.51
+LAS accuracy:	82.71
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 663
+Train loss/token=0.3039, time=26.42s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	85.61
+LAS accuracy:	82.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 664
+Train loss/token=0.2993, time=26.41s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	85.63
+LAS accuracy:	82.69
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 665
+Train loss/token=0.3047, time=26.39s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.66
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 666
+Train loss/token=0.3049, time=26.42s
+Performance on Dev data
+Finish predictions on dev data in 23.09s
+---
+UAS accuracy:	85.57
+LAS accuracy:	82.75
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 667
+Train loss/token=0.3021, time=26.76s
+Performance on Dev data
+Finish predictions on dev data in 23.08s
+---
+UAS accuracy:	85.46
+LAS accuracy:	82.55
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 668
+Train loss/token=0.3024, time=26.51s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.63
+LAS accuracy:	82.63
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 669
+Train loss/token=0.3048, time=26.48s
+Performance on Dev data
+Finish predictions on dev data in 23.06s
+---
+UAS accuracy:	85.51
+LAS accuracy:	82.77
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 670
+Train loss/token=0.2884, time=26.50s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.83
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 671
+Train loss/token=0.3090, time=26.48s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.99
+LAS accuracy:	83.12
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 672
+Train loss/token=0.2914, time=26.49s
+Performance on Dev data
+Finish predictions on dev data in 23.05s
+---
+UAS accuracy:	85.75
+LAS accuracy:	82.71
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 673
+Train loss/token=0.3013, time=26.49s
+Performance on Dev data
+Finish predictions on dev data in 23.04s
+---
+UAS accuracy:	85.38
+LAS accuracy:	82.44
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 674
+Train loss/token=0.2978, time=26.66s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.48
+LAS accuracy:	82.52
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 675
+Train loss/token=0.2901, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.54
+LAS accuracy:	82.61
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 676
+Train loss/token=0.2968, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.60
+LAS accuracy:	82.54
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 677
+Train loss/token=0.3042, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.14
+LAS accuracy:	82.43
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 678
+Train loss/token=0.3000, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.54
+LAS accuracy:	82.72
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 679
+Train loss/token=0.2863, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.33
+LAS accuracy:	82.36
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 680
+Train loss/token=0.3035, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.47
+LAS accuracy:	82.64
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 681
+Train loss/token=0.2979, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.97
+LAS accuracy:	83.18
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 682
+Train loss/token=0.3048, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.66
+LAS accuracy:	82.91
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 683
+Train loss/token=0.3056, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.31
+LAS accuracy:	82.28
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 684
+Train loss/token=0.3068, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.00
+LAS accuracy:	82.13
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 685
+Train loss/token=0.3016, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.69
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 686
+Train loss/token=0.2853, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.62
+LAS accuracy:	82.72
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 687
+Train loss/token=0.2947, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.42
+LAS accuracy:	82.37
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 688
+Train loss/token=0.2965, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.32
+LAS accuracy:	82.43
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 689
+Train loss/token=0.2927, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.49
+LAS accuracy:	82.63
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 690
+Train loss/token=0.2748, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.31
+LAS accuracy:	82.42
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 691
+Train loss/token=0.2961, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.46
+LAS accuracy:	82.63
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 692
+Train loss/token=0.3029, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.92
+LAS accuracy:	83.05
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 693
+Train loss/token=0.2909, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.37
+LAS accuracy:	82.41
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 694
+Train loss/token=0.2849, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.34
+LAS accuracy:	82.50
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 695
+Train loss/token=0.2873, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.56
+LAS accuracy:	82.74
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 696
+Train loss/token=0.3018, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.36
+LAS accuracy:	82.35
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 697
+Train loss/token=0.2885, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.52
+LAS accuracy:	82.74
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 698
+Train loss/token=0.2920, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.21
+LAS accuracy:	82.49
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 699
+Train loss/token=0.2885, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.71
+LAS accuracy:	82.57
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 700
+Train loss/token=0.3006, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.57
+LAS accuracy:	82.65
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 701
+Train loss/token=0.2923, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.00
+LAS accuracy:	83.09
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 702
+Train loss/token=0.2943, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.89
+LAS accuracy:	83.05
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 703
+Train loss/token=0.2918, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.14
+LAS accuracy:	82.34
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 704
+Train loss/token=0.2971, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.19
+LAS accuracy:	82.21
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 705
+Train loss/token=0.2912, time=26.38s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.42
+LAS accuracy:	82.48
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 706
+Train loss/token=0.2898, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.78
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 707
+Train loss/token=0.2941, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.82
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 708
+Train loss/token=0.2951, time=26.38s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.79
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 709
+Train loss/token=0.2797, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.98
+LAS accuracy:	82.91
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 710
+Train loss/token=0.2918, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.62
+LAS accuracy:	82.73
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 711
+Train loss/token=0.2857, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.67
+LAS accuracy:	82.99
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 712
+Train loss/token=0.2916, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.65
+LAS accuracy:	82.70
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 713
+Train loss/token=0.2740, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.31
+LAS accuracy:	83.37
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 714
+Train loss/token=0.2971, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.70
+LAS accuracy:	82.73
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 715
+Train loss/token=0.2958, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.60
+LAS accuracy:	82.79
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 716
+Train loss/token=0.2930, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.92
+LAS accuracy:	82.96
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 717
+Train loss/token=0.2817, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.59
+LAS accuracy:	82.62
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 718
+Train loss/token=0.2874, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.57
+LAS accuracy:	82.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 719
+Train loss/token=0.2943, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.77
+LAS accuracy:	82.79
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 720
+Train loss/token=0.2958, time=26.32s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.62
+LAS accuracy:	82.72
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 721
+Train loss/token=0.2833, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.77
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 722
+Train loss/token=0.2859, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.29
+LAS accuracy:	82.59
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 723
+Train loss/token=0.2778, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.74
+LAS accuracy:	82.93
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 724
+Train loss/token=0.2896, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.71
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 725
+Train loss/token=0.2785, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.64
+LAS accuracy:	82.96
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 726
+Train loss/token=0.2803, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.54
+LAS accuracy:	82.64
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 727
+Train loss/token=0.2936, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.41
+LAS accuracy:	82.57
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 728
+Train loss/token=0.2832, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.80
+LAS accuracy:	83.06
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 729
+Train loss/token=0.2887, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.30
+LAS accuracy:	82.49
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 730
+Train loss/token=0.2851, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.24
+LAS accuracy:	82.51
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 731
+Train loss/token=0.2874, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.75
+LAS accuracy:	83.02
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 732
+Train loss/token=0.2853, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.24
+LAS accuracy:	82.43
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 733
+Train loss/token=0.2765, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.62
+LAS accuracy:	82.61
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 734
+Train loss/token=0.2899, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.77
+LAS accuracy:	82.97
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 735
+Train loss/token=0.2845, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.45
+LAS accuracy:	82.68
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 736
+Train loss/token=0.2804, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.92
+LAS accuracy:	83.05
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 737
+Train loss/token=0.2762, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.65
+LAS accuracy:	82.68
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 738
+Train loss/token=0.2852, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.73
+LAS accuracy:	82.91
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 739
+Train loss/token=0.2871, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.56
+LAS accuracy:	82.74
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 740
+Train loss/token=0.2826, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.83
+LAS accuracy:	82.83
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 741
+Train loss/token=0.2894, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.61
+LAS accuracy:	82.65
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 742
+Train loss/token=0.2817, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.63
+LAS accuracy:	82.60
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 743
+Train loss/token=0.2895, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.65
+LAS accuracy:	82.73
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 744
+Train loss/token=0.2874, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.75
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 745
+Train loss/token=0.2821, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.42
+LAS accuracy:	82.37
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 746
+Train loss/token=0.2982, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.35
+LAS accuracy:	82.63
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 747
+Train loss/token=0.2697, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.86
+LAS accuracy:	83.09
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 748
+Train loss/token=0.2822, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.61
+LAS accuracy:	82.82
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 749
+Train loss/token=0.2792, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.40
+LAS accuracy:	82.58
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 750
+Train loss/token=0.2906, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.65
+LAS accuracy:	82.65
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 751
+Train loss/token=0.2831, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.73
+LAS accuracy:	82.91
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 752
+Train loss/token=0.2866, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.65
+LAS accuracy:	82.61
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 753
+Train loss/token=0.2797, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.79
+LAS accuracy:	82.68
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 754
+Train loss/token=0.2787, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.32
+LAS accuracy:	82.37
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 755
+Train loss/token=0.2827, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.91
+LAS accuracy:	83.04
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 756
+Train loss/token=0.2744, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.11
+LAS accuracy:	82.30
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 757
+Train loss/token=0.2796, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.59
+LAS accuracy:	82.81
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 758
+Train loss/token=0.2940, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.95
+LAS accuracy:	83.01
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 759
+Train loss/token=0.2792, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.00
+LAS accuracy:	83.21
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 760
+Train loss/token=0.2950, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.81
+LAS accuracy:	82.74
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 761
+Train loss/token=0.2823, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.85
+LAS accuracy:	83.00
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 762
+Train loss/token=0.2776, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.66
+LAS accuracy:	82.81
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 763
+Train loss/token=0.2738, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.68
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 764
+Train loss/token=0.2764, time=26.38s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.10
+LAS accuracy:	83.26
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 765
+Train loss/token=0.2729, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.80
+LAS accuracy:	82.75
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 766
+Train loss/token=0.2790, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.72
+LAS accuracy:	82.66
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 767
+Train loss/token=0.2848, time=26.37s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.12
+LAS accuracy:	83.07
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 768
+Train loss/token=0.2799, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.81
+LAS accuracy:	82.84
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 769
+Train loss/token=0.2796, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.40
+LAS accuracy:	82.42
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 770
+Train loss/token=0.2720, time=26.39s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.56
+LAS accuracy:	82.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 771
+Train loss/token=0.2809, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.42
+LAS accuracy:	82.58
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 772
+Train loss/token=0.2803, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.59
+LAS accuracy:	82.95
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 773
+Train loss/token=0.2864, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.81
+LAS accuracy:	83.06
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 774
+Train loss/token=0.2723, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.68
+LAS accuracy:	82.88
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 775
+Train loss/token=0.2869, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.40
+LAS accuracy:	82.58
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 776
+Train loss/token=0.2855, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.98s
+---
+UAS accuracy:	85.97
+LAS accuracy:	82.92
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 777
+Train loss/token=0.2769, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.45
+LAS accuracy:	82.56
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 778
+Train loss/token=0.2734, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.64
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 779
+Train loss/token=0.2727, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.44
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 780
+Train loss/token=0.2898, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.35
+LAS accuracy:	82.52
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 781
+Train loss/token=0.2757, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.81
+LAS accuracy:	82.94
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 782
+Train loss/token=0.2807, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.33
+LAS accuracy:	82.49
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 783
+Train loss/token=0.2709, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.71
+LAS accuracy:	82.77
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 784
+Train loss/token=0.2822, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.56
+LAS accuracy:	82.49
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 785
+Train loss/token=0.2724, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.98
+LAS accuracy:	83.07
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 786
+Train loss/token=0.2804, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.49
+LAS accuracy:	82.59
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 787
+Train loss/token=0.2887, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.35
+LAS accuracy:	82.55
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 788
+Train loss/token=0.2802, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.42
+LAS accuracy:	82.56
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 789
+Train loss/token=0.2757, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.62
+LAS accuracy:	82.82
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 790
+Train loss/token=0.2724, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.85
+LAS accuracy:	82.81
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 791
+Train loss/token=0.2667, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.42
+LAS accuracy:	82.40
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 792
+Train loss/token=0.2796, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.53
+LAS accuracy:	82.59
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 793
+Train loss/token=0.2748, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.76
+LAS accuracy:	82.87
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 794
+Train loss/token=0.2779, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.47
+LAS accuracy:	82.53
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 795
+Train loss/token=0.2900, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	86.01
+LAS accuracy:	83.01
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 796
+Train loss/token=0.2711, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.21
+LAS accuracy:	82.34
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 797
+Train loss/token=0.2690, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.57
+LAS accuracy:	82.67
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 798
+Train loss/token=0.2734, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.56
+LAS accuracy:	82.58
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 799
+Train loss/token=0.2666, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.68
+LAS accuracy:	82.82
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 800
+Train loss/token=0.2724, time=26.35s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.49
+LAS accuracy:	82.62
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 801
+Train loss/token=0.2803, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.83
+LAS accuracy:	83.06
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 802
+Train loss/token=0.2623, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.75
+LAS accuracy:	82.82
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 803
+Train loss/token=0.2676, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 22.99s
+---
+UAS accuracy:	85.26
+LAS accuracy:	82.40
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 804
+Train loss/token=0.2636, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.60
+LAS accuracy:	82.63
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 805
+Train loss/token=0.2734, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.14
+LAS accuracy:	82.12
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 806
+Train loss/token=0.2709, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.69
+LAS accuracy:	82.70
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 807
+Train loss/token=0.2864, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.16
+LAS accuracy:	82.13
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 808
+Train loss/token=0.2641, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.61
+LAS accuracy:	82.78
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 809
+Train loss/token=0.2661, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.00s
+---
+UAS accuracy:	85.61
+LAS accuracy:	82.77
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 810
+Train loss/token=0.2710, time=26.33s
+Performance on Dev data
+Finish predictions on dev data in 23.02s
+---
+UAS accuracy:	85.61
+LAS accuracy:	82.76
+Highest LAS(@Dev): 84.10 at epoch 265
+
+-----------------
+Starting epoch 811
+Train loss/token=0.2811, time=26.34s
+Performance on Dev data
+Finish predictions on dev data in 23.01s
+---
+UAS accuracy:	85.89
+LAS accuracy:	83.03
+Highest LAS(@Dev): 84.10 at epoch 265
+
