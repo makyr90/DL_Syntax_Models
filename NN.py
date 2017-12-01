@@ -30,3 +30,25 @@ class MLP:
             return dy.softmax(output)
         else:
             return output
+
+
+class Lin_Projection:
+    """ MLP with 1 hidden Layer """
+
+    def __init__(self, model, input_dim,output_dim):
+
+        self.input = input_dim
+        self.output = output_dim
+
+        self.W = model.add_parameters((self.output,self.input))
+        self.b = model.add_parameters((self.output), init = dy.ConstInitializer(0))
+
+
+    def __call__(self, inputs):
+
+        W = dy.parameter(self.W)
+        b = dy.parameter(self.b)
+
+        output = dy.affine_transform([b,W,inputs])
+
+        return output

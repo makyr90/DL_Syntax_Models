@@ -2,7 +2,7 @@ import dynet as dy
 from utils import read_conll, write_conll, orthonormal_initializer
 from biaffine import DeepBiaffineAttentionDecoder
 from char_attention import HybridCharacterAttention
-from NN import MLP
+from NN import Lin_Projection
 import  time, random, utils, pickle
 import numpy as np
 
@@ -49,7 +49,7 @@ class biAffine_parser:
             self.external_embedding = np.load(options.external_embedding)
             self.ext_voc=  pickle.load( open( options.external_embedding_voc, "rb" ) )
             self.edim = self.external_embedding.shape[1]
-            self.projective_embs_MLP = MLP(self.model, self.edim, self.edim, self.wdims)
+            self.projective_embs = Lin_Projection(self.model, self.edim, self.wdims)
             self.elookup_train = self.pretrained_embs.add_lookup_parameters((len(self.ext_words_train)+3 , self.edim))
             for word, i in self.ext_words_train.items():
                 self.elookup_train.init_row(i, self.external_embedding[self.ext_voc[word],:])
@@ -70,7 +70,7 @@ class biAffine_parser:
             self.ext_words_devtest['PAD'] = 2
 
             print('Load external embeddings. External embeddings vectors dimension', self.edim)
-           
+
         print("Dropout probability for MLP's hidden layers & LSTM's hidden/reccurent units:", self.dropout)
 
         self.fwdLSTM = dy.VanillaLSTMBuilder(self.layers, self.wdims + self.posdims, self.ldims, self.model,forget_bias = 0.0)
@@ -163,7 +163,7 @@ class biAffine_parser:
 
 
                 extwembs = dy.lookup_batch(self.elookup_devtest,extwid)
-                proj_ext_word_embs = self.projective_embs_MLP(extwembs)
+                proj_ext_word_embs = self.projective_embs(extwembs)
                 finalwembs = dy.esum([wembs,proj_ext_word_embs,chr_embs])
 
                 posembs = dy.lookup_batch(self.poslookup, posid)
@@ -296,7 +296,7 @@ class biAffine_parser:
             # chr_embs = dy.concatenate_to_batch(chr_embs)
 
             extwembs = dy.lookup_batch(self.elookup_train,extwid)
-            proj_ext_word_embs = self.projective_embs_MLP(extwembs)
+            proj_ext_word_embs = self.projective_embs(extwembs)
             finalwembs = dy.esum([wembs,proj_ext_word_embs,chr_embs])
 
             posembs = dy.lookup_batch(self.poslookup, posid)
