@@ -33,7 +33,7 @@ class MLP:
 
 
 class Lin_Projection:
-    """ MLP with 1 hidden Layer """
+    """ Linear projection Layer """
 
     def __init__(self, model, input_dim,output_dim):
 
