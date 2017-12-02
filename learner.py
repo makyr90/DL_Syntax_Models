@@ -85,18 +85,18 @@ class biAffine_parser:
 
         self.HybridCharembs = HybridCharacterAttention(self.model,layers=1,ldims=400,input_size=self.cdims,output_size=self.wdims,dropout=self.dropout)
 
-        self.wlookup = self.model.add_lookup_parameters((len(vocab) + 3, self.wdims))
+        self.wlookup = self.model.add_lookup_parameters((len(vocab) + 3, self.wdims),init = dy.ConstInitializer(0))
         #0 for unknown 1 for [initial] and 2 for [PAD]
-        self.poslookup = self.model.add_lookup_parameters((len(self.pos) + 3, self.posdims))
+        self.poslookup = self.model.add_lookup_parameters((len(self.pos) + 3, self.posdims),init = dy.ConstInitializer(0))
         #0 for unknown 1 for [initial] and 2 for [PAD]
-        self.xposlookup = self.model.add_lookup_parameters((len(self.xpos) + 3, self.posdims))
+        self.xposlookup = self.model.add_lookup_parameters((len(self.xpos) + 3, self.posdims),init = dy.ConstInitializer(0))
         #0 for unknown 1 for [initial] and 2 for [PAD]
-        self.featslookup = self.model.add_lookup_parameters((len(self.feats) + 3, self.posdims))
+        self.featslookup = self.model.add_lookup_parameters((len(self.feats) + 3, self.posdims),init = dy.ConstInitializer(0))
         #0 for unknown 1 for [initial] and 2 for [PAD]
 
         self.project_pos_xpos_feats = MLP(self.model, 3*self.posdims, 3*self.posdims, self.posdims) #dropout=self.dropout
 
-        self.clookup = self.model.add_lookup_parameters((len(c2i), self.cdims))
+        self.clookup = self.model.add_lookup_parameters((len(c2i), self.cdims),init = dy.ConstInitializer(0))
 
 
     def Save(self, filename):
