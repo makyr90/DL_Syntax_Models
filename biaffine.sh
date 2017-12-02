@@ -6,8 +6,8 @@ stdbuf -oL python3 -u biaffine_parser.py --dynet-seed 123456789 \
 --predict-batch 32 \
 --batch-tokens 3000 \
 --dropout 0.33 \
---extrn sample/gr_GloVe.npy \
---extrn-voc sample/gr_GloVe.vocab \
+--extrn sample/gr_fasttext.npy \
+--extrn-voc sample/gr_fasttext.vocab \
 --wembedding 100 \
 --cembedding 100 \
 --posembedding 100 \

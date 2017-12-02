@@ -2,13 +2,13 @@ import dynet as dy
 from utils import read_conll, write_conll, orthonormal_initializer
 from biaffine import DeepBiaffineAttentionDecoder
 from char_attention import HybridCharacterAttention
-from NN import Lin_Projection
+from NN import Lin_Projection, MLP
 import  time, random, utils, pickle
 import numpy as np
 
 
 class biAffine_parser:
-    def __init__(self, vocab, pos, xpos, rels, w2i, c2i, ext_words_train, ext_words_devtest, options):
+    def __init__(self, vocab, pos, xpos, rels,feats, w2i, c2i, ext_words_train, ext_words_devtest, options):
 
         self.model = dy.ParameterCollection()
         self.pretrained_embs = dy.ParameterCollection()
@@ -28,6 +28,7 @@ class biAffine_parser:
         self.pos = {word: ind+3 for ind, word in enumerate(pos)}
         self.id2pos = {ind: word for word,ind in self.pos.items()}
         self.xpos = {word: ind+3 for ind, word in enumerate(xpos)}
+        self.feats = {word: ind+3 for ind, word in enumerate(feats)}
         self.id2xpos = {ind: word for word,ind in self.xpos.items()}
         self.c2i = c2i
         self.rels = {word: ind for ind, word in enumerate(rels)}
@@ -39,6 +40,8 @@ class biAffine_parser:
         self.pos['PAD'] = 2
         self.xpos['INITIAL'] = 1
         self.xpos['PAD'] = 2
+        self.feats['INITIAL'] = 1
+        self.feats['PAD'] = 2
 
 
 
@@ -88,6 +91,10 @@ class biAffine_parser:
         #0 for unknown 1 for [initial] and 2 for [PAD]
         self.xposlookup = self.model.add_lookup_parameters((len(self.xpos) + 3, self.posdims))
         #0 for unknown 1 for [initial] and 2 for [PAD]
+        self.featslookup = self.model.add_lookup_parameters((len(self.feats) + 3, self.posdims))
+        #0 for unknown 1 for [initial] and 2 for [PAD]
+
+        self.project_pos_xpos_feats = MLP(self.model, 3*self.posdims, 3*self.posdims, self.posdims) #dropout=self.dropout
 
         self.clookup = self.model.add_lookup_parameters((len(c2i), self.cdims))
 
@@ -126,6 +133,7 @@ class biAffine_parser:
             wids = []
             posids = []
             xposids = []
+            featsids =[]
             extwids = []
             wordChars =[]
             masks = []
@@ -133,6 +141,7 @@ class biAffine_parser:
                 wids.append([(int(self.vocab.get(sent[i].norm, 0)) if len(sent) > i else 2) for sent in sentences]) #2 is the word id for pad symbol
                 posids.append([(int(self.pos.get(sent[i].pos,0)) if len(sent) > i else 2) for sent in sentences])
                 xposids.append([(int(self.xpos.get(sent[i].xpos,0)) if len(sent) > i else 2) for sent in sentences])
+                featsids.append([(int(self.feats.get(sent[i].feats,0)) if len(sent) > i else 2) for sent in sentences])
 
                 wordChars.append([sent[i].idChars if len(sent) > i else [] for sent in sentences]) #5 is the char id for pad symbol
                 extwids.append([(int(self.ext_words_devtest.get(sent[i].norm, 0)) if len(sent) > i else 2) for sent in sentences])
@@ -142,7 +151,7 @@ class biAffine_parser:
 
             input_vecs = []
 
-            for idx,(wid,wch,extwid,posid,xposid,mask) in enumerate(zip(wids,wordChars,extwids,posids,xposids,masks)):
+            for idx,(wid,wch,extwid,posid,xposid,featsid,mask) in enumerate(zip(wids,wordChars,extwids,posids,xposids,featsids,masks)):
 
                 wembs = dy.lookup_batch(self.wlookup, wid)
 
@@ -168,7 +177,9 @@ class biAffine_parser:
 
                 posembs = dy.lookup_batch(self.poslookup, posid)
                 xposembs = dy.lookup_batch(self.xposlookup, xposid)
-                finalposembs = dy.esum([posembs,xposembs])
+                featsembs = dy.lookup_batch(self.featslookup, featsid)
+                concat_pos_xpos_feats_embs = dy.concatenate([posembs,xposembs,featsembs])
+                finalposembs = self.project_pos_xpos_feats(concat_pos_xpos_feats_embs,predict=True)
 
                 if mask[-1] != 1:
                     mask_expr = dy.inputVector(mask)
@@ -241,6 +252,7 @@ class biAffine_parser:
         wids = []
         posids = []
         xposids = []
+        featsids = []
         extwids = []
         wordChars =[]
         masks = []
@@ -250,6 +262,7 @@ class biAffine_parser:
             wids.append([(int(self.vocab.get(sent[i].norm, 0)) if len(sent) > i else 2) for sent in sentences]) #2 is the word id for pad symbol
             posids.append([(int(self.pos.get(sent[i].pos,0)) if len(sent) > i else 2) for sent in sentences])
             xposids.append([(int(self.xpos.get(sent[i].xpos,0)) if len(sent) > i else 2) for sent in sentences])
+            featsids.append([(int(self.feats.get(sent[i].feats,0)) if len(sent) > i else 2) for sent in sentences])
 
             wordChars.append([sent[i].idChars if len(sent) > i else [] for sent in sentences]) #5 is the char id for pad symbol
             extwids.append([(int(self.ext_words_train.get(sent[i].norm, 0)) if len(sent) > i else 2) for sent in sentences])
@@ -264,7 +277,7 @@ class biAffine_parser:
 
         input_vecs = []
 
-        for idx,(wid,wch,extwid,posid,xposid) in enumerate(zip(wids,wordChars,extwids,posids,xposids)):
+        for idx,(wid,wch,extwid,posid,xposid,featsid) in enumerate(zip(wids,wordChars,extwids,posids,xposids,featsids)):
 
             wembs = dy.lookup_batch(self.wlookup, wid)
 
@@ -301,7 +314,9 @@ class biAffine_parser:
 
             posembs = dy.lookup_batch(self.poslookup, posid)
             xposembs = dy.lookup_batch(self.xposlookup, xposid)
-            finalposembs = dy.esum([posembs,xposembs])
+            featsembs = dy.lookup_batch(self.featslookup, featsid)
+            concat_pos_xpos_feats_embs = dy.concatenate([posembs,xposembs,featsembs])
+            finalposembs = self.project_pos_xpos_feats(concat_pos_xpos_feats_embs)
 
             #Apply word embeddings dropout mask
             word_dropout_mask = dy.inputVector(wemb_Dropout[idx])

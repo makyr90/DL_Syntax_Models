@@ -43,14 +43,14 @@ if __name__ == '__main__':
 
     if options.predictFlag:
         with open(os.path.join(options.output, options.params), 'rb') as paramsfp:
-            words, w2i, c2i, pos, xpos, rels, stored_opt = pickle.load(paramsfp)
+            words, w2i, c2i, pos, xpos, rels, feats, stored_opt = pickle.load(paramsfp)
 
         stored_opt.external_embedding = options.external_embedding
         ext_words_train = utils.ext_vocab(options.conll_train,options.external_embedding_voc)
         ext_words_test = utils.ext_vocab(options.conll_test,options.external_embedding_voc)
 
         print('Loading pre-trained  model')
-        biaf_parser = learner.biAffine_parser(words, pos, xpos, rels, w2i, c2i, ext_words_train, ext_words_test, stored_opt)
+        biaf_parser = learner.biAffine_parser(words, pos, xpos, rels, feats, w2i, c2i, ext_words_train, ext_words_test, stored_opt)
         biaf_parser.Load(options.model)
 
         tespath = os.path.join(options.output, options.conll_test_output)
@@ -70,27 +70,27 @@ if __name__ == '__main__':
         if (options.last_epoch == 0):
 
             print('Extracting vocabulary')
-            words, w2i, c2i, pos, xpos, rels = utils.vocab(options.conll_train)
-
+            words, w2i, c2i, pos, xpos, rels, feats = utils.vocab(options.conll_train)
+            
             with open(os.path.join(options.output, options.params), 'wb') as paramsfp:
-                pickle.dump((words, w2i, c2i, pos, xpos, rels, options), paramsfp)
+                pickle.dump((words, w2i, c2i, pos, xpos, rels, feats, options), paramsfp)
 
             print('Initializing  model')
-            biaf_parser = learner.biAffine_parser(words, pos, xpos, rels, w2i, c2i, ext_words_train, ext_words_dev, options)
+            biaf_parser = learner.biAffine_parser(words, pos, xpos, rels, feats, w2i, c2i, ext_words_train, ext_words_dev, options)
 
             with open("Results2.txt", "a") as results:
                 results.write("T_Step\tUAS\tLAS\n")
         else:
 
             with open(os.path.join(options.output, options.params), 'rb') as paramsfp:
-                words, w2i, c2i, pos, xpos, rels, stored_opt = pickle.load(paramsfp)
+                words, w2i, c2i, pos, xpos, rels, feats, stored_opt = pickle.load(paramsfp)
 
 
             stored_opt.external_embedding = options.external_embedding
 
             print('Loading  model')
 
-            biaf_parser = learner.biAffine_parser(words, pos, xpos, rels, w2i, c2i, ext_words_train, ext_words_dev, stored_opt)
+            biaf_parser = learner.biAffine_parser(words, pos, xpos, rels, feats, w2i, c2i, ext_words_train, ext_words_dev, stored_opt)
             biaf_parser.Load(os.path.join(options.output, os.path.basename(options.model)))
 
 
