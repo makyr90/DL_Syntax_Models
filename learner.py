@@ -94,8 +94,6 @@ class biAffine_parser:
         self.featslookup = self.model.add_lookup_parameters((len(self.feats) + 3, self.posdims),init = dy.ConstInitializer(0))
         #0 for unknown 1 for [initial] and 2 for [PAD]
 
-        self.project_pos_xpos_feats = MLP(self.model, 3*self.posdims, 3*self.posdims, self.posdims) #dropout=self.dropout
-
         self.clookup = self.model.add_lookup_parameters((len(c2i), self.cdims),init = dy.ConstInitializer(0))
 
 
@@ -178,8 +176,7 @@ class biAffine_parser:
                 posembs = dy.lookup_batch(self.poslookup, posid)
                 xposembs = dy.lookup_batch(self.xposlookup, xposid)
                 featsembs = dy.lookup_batch(self.featslookup, featsid)
-                concat_pos_xpos_feats_embs = dy.concatenate([posembs,xposembs,featsembs])
-                finalposembs = self.project_pos_xpos_feats(concat_pos_xpos_feats_embs,predict=True)
+                finalposembs = dy.esum([posembs,xposembs,featsembs])
 
                 if mask[-1] != 1:
                     mask_expr = dy.inputVector(mask)
@@ -315,8 +312,7 @@ class biAffine_parser:
             posembs = dy.lookup_batch(self.poslookup, posid)
             xposembs = dy.lookup_batch(self.xposlookup, xposid)
             featsembs = dy.lookup_batch(self.featslookup, featsid)
-            concat_pos_xpos_feats_embs = dy.concatenate([posembs,xposembs,featsembs])
-            finalposembs = self.project_pos_xpos_feats(concat_pos_xpos_feats_embs)
+            finalposembs = dy.esum([posembs,xposembs,featsembs])
 
             #Apply word embeddings dropout mask
             word_dropout_mask = dy.inputVector(wemb_Dropout[idx])

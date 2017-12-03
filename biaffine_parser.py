@@ -71,14 +71,14 @@ if __name__ == '__main__':
 
             print('Extracting vocabulary')
             words, w2i, c2i, pos, xpos, rels, feats = utils.vocab(options.conll_train)
-            
+
             with open(os.path.join(options.output, options.params), 'wb') as paramsfp:
                 pickle.dump((words, w2i, c2i, pos, xpos, rels, feats, options), paramsfp)
 
             print('Initializing  model')
             biaf_parser = learner.biAffine_parser(words, pos, xpos, rels, feats, w2i, c2i, ext_words_train, ext_words_dev, options)
 
-            with open("Results2.txt", "a") as results:
+            with open("Results.txt", "a") as results:
                 results.write("T_Step\tUAS\tLAS\n")
         else:
 
@@ -132,7 +132,7 @@ if __name__ == '__main__':
                 print("Finish predictions on dev data in %.2fs" %  (time.time() - start))
                 print("---\nUAS accuracy:\t%.2f" % (float(uasCount) * 100 / count))
                 print("LAS accuracy:\t%.2f" % (float(lasCount) * 100 / count))
-                with open("Results2.txt", "a") as results:
+                with open("Results.txt", "a") as results:
                     results.write(str(t_step)+"\t"+str(round((float(uasCount) * 100 / count),2))+"\t"+str(round((float(lasCount) * 100 / count),2))+"\n")
 
 

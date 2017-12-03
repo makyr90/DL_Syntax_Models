@@ -36,8 +36,8 @@ class DeepBiaffineAttentionDecoder(object):
         self.u_arc_2 = model.add_parameters((n_arc_mlp_units),init = dy.ConstInitializer(0))
 
         self.U_label_1 = [model.add_parameters((n_label_mlp_units, n_label_mlp_units)) for _ in range(n_labels)]
-        self.u_label_2_2 = [model.add_parameters((1, n_label_mlp_units),init = dy.ConstInitializer(0)) for _ in range(n_labels)]
-        self.u_label_2_1 = [model.add_parameters((n_label_mlp_units, 1),init = dy.ConstInitializer(0)) for _ in range(n_labels)]
+        self.u_label_2_2 = [model.add_parameters((1, n_label_mlp_units)) for _ in range(n_labels)]
+        self.u_label_2_1 = [model.add_parameters((n_label_mlp_units, 1)) for _ in range(n_labels)]
         self.b_label = [model.add_parameters((1,),init = dy.ConstInitializer(0)) for _ in range(n_labels)]
 
 
