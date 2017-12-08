@@ -35,7 +35,6 @@ def vocab(conll_path):
     posCount = Counter()
     xposCount = Counter()
     relCount = Counter()
-    featsCount = Counter()
 
     #Character vocabulary
     c2i = {}
@@ -58,7 +57,6 @@ def vocab(conll_path):
                 posCount.update([node.pos for node in tokens if isinstance(node, ConllEntry)])
                 xposCount.update([node.xpos for node in tokens if isinstance(node, ConllEntry)])
                 relCount.update([node.relation for node in tokens if isinstance(node, ConllEntry)])
-                featsCount.update([node.feats for node in tokens if isinstance(node, ConllEntry)])
             tokens = [root]
         else:
             if line[0] == '#' or '-' in tok[0] or '.' in tok[0]:
@@ -86,12 +84,11 @@ def vocab(conll_path):
         posCount.update([node.pos for node in tokens if isinstance(node, ConllEntry)])
         xposCount.update([node.xpos for node in tokens if isinstance(node, ConllEntry)])
         relCount.update([node.relation for node in tokens if isinstance(node, ConllEntry)])
-        featsCount.update([node.feats for node in tokens if isinstance(node, ConllEntry)])
 
     #Keep words that appears at least twice in the trainning corpus
     wordsCount = {k: v for k, v in wordsCount.items() if v > 1}
 
-    return (wordsCount, {w: i for i, w in enumerate(list(wordsCount.keys()))}, c2i, list(posCount.keys()),list(xposCount.keys()), list(relCount.keys()), list(featsCount.keys()))
+    return (wordsCount, {w: i for i, w in enumerate(list(wordsCount.keys()))}, c2i, list(posCount.keys()),list(xposCount.keys()), list(relCount.keys()))
 
 def ext_vocab(conll_path,ext_emb_file):
 
