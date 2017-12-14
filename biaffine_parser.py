@@ -109,43 +109,49 @@ if __name__ == '__main__':
                     biaf_parser.Train(sentences,mini_batch,t_step)
 
 
-                print("Performance on Dev data")
-                start = time.time()
-                devPredSents = biaf_parser.Predict(options.conll_dev)
-                count = 0
-                lasCount = 0
-                uasCount = 0
+                if (t_step <=1000):
+                    if (t_step%100== 0):
+                        print("Save Model...")
+                        biaf_parser.Save(os.path.join(options.output, os.path.basename(options.model)))
 
-                for idSent, devSent in enumerate(devPredSents):
-                    conll_devSent = [entry for entry in devSent if isinstance(entry, utils.ConllEntry)]
+                else:
+                    print("Performance on Dev data")
+                    start = time.time()
+                    devPredSents = biaf_parser.Predict(options.conll_dev)
+                    count = 0
+                    lasCount = 0
+                    uasCount = 0
 
-                    for entry in conll_devSent:
-                        if entry.id <= 0:
-                            continue
+                    for idSent, devSent in enumerate(devPredSents):
+                        conll_devSent = [entry for entry in devSent if isinstance(entry, utils.ConllEntry)]
 
-                        if entry.parent_id == entry.pred_parent_id:
-                            uasCount += 1
-                            if entry.pred_relation == entry.relation:
-                                lasCount += 1
-                        count += 1
+                        for entry in conll_devSent:
+                            if entry.id <= 0:
+                                continue
 
-                print("Finish predictions on dev data in %.2fs" %  (time.time() - start))
-                print("---\nUAS accuracy:\t%.2f" % (float(uasCount) * 100 / count))
-                print("LAS accuracy:\t%.2f" % (float(lasCount) * 100 / count))
-                with open("Results.txt", "a") as results:
-                    results.write(str(t_step)+"\t"+str(round((float(uasCount) * 100 / count),2))+"\t"+str(round((float(lasCount) * 100 / count),2))+"\n")
+                            if entry.parent_id == entry.pred_parent_id:
+                                uasCount += 1
+                                if entry.pred_relation == entry.relation:
+                                    lasCount += 1
+                            count += 1
+
+                    print("Finish predictions on dev data in %.2fs" %  (time.time() - start))
+                    print("---\nUAS accuracy:\t%.2f" % (float(uasCount) * 100 / count))
+                    print("LAS accuracy:\t%.2f" % (float(lasCount) * 100 / count))
+                    with open("Results.txt", "a") as results:
+                        results.write(str(t_step)+"\t"+str(round((float(uasCount) * 100 / count),2))+"\t"+str(round((float(lasCount) * 100 / count),2))+"\n")
 
 
 
-                score = (float(lasCount) * 100 / count)
-                if score >= highestScore:
-                    biaf_parser.Save(os.path.join(options.output, os.path.basename(options.model)))
-                    highestScore = score
-                    tsId = t_step
+                    score = (float(lasCount) * 100 / count)
+                    if score >= highestScore:
+                        biaf_parser.Save(os.path.join(options.output, os.path.basename(options.model)))
+                        highestScore = score
+                        tsId = t_step
 
-                print("Highest LAS(@Dev): %.2f at trainning step %d" % (highestScore,tsId))
+                    print("Highest LAS(@Dev): %.2f at trainning step %d" % (highestScore,tsId))
 
-                if ((t_step - tsId) > 5000):
-                    print("Model trainning finish..")
-                    print("Model  didn't improve during the last 5000 trainning steps")
-                    sys.exit()
+                    if ((t_step - tsId) > 5000):
+                        print("Model trainning finish..")
+                        print("Model  didn't improve during the last 5000 trainning steps")
+                        sys.exit()
