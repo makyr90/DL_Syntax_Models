@@ -143,7 +143,7 @@ def read_conll(fh,c2i):
                 else:
 
                     chars_of_word = [2]
-                    for char in tok[1]:
+                    for char in tok[1].lower():
                         if char in c2i:
                             chars_of_word.append(c2i[char])
                         else:
