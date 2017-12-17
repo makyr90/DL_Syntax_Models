@@ -1,2 +1,14 @@
-# POS_XPOS_Tagger
+# Dozat et al. model for POS/XPOS tagging implemented in DyNet Framework using $
 
+## Greek dev data
+
+- **POS: **
+
+- **XPOS: **
+
+
+## Greek test data
+
+- **POS: **
+
+- **XPOS: **
