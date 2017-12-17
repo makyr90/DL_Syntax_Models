@@ -1,4 +1,4 @@
-# Dozat et al. model for POS/XPOS tagging implemented in DyNet Framework using $
+# Dozat et al. model for POS/XPOS tagging implemented in DyNet Framework using Python3
 
 ## Greek dev data
 
