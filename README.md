@@ -1,14 +1,14 @@
 # Dozat et al. model for POS/XPOS tagging implemented in DyNet Framework using Python3
 
-## Greek dev data
+## Greek dev data(Accuracy)
 
-- **POS: **
+- **POS: 97.01 **
 
-- **XPOS: **
+- **XPOS: 97.10 **
 
 
-## Greek test data
+## Greek test data(Accuracy)
 
-- **POS: **
+- **POS: 97.69 **
 
-- **XPOS: **
+- **XPOS: 97.68 **
