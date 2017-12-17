@@ -1,4 +1,5 @@
 import dynet as dy
+import Saxe
 
 class MLP:
     """ MLP with 1 hidden Layer """
@@ -45,7 +46,8 @@ class Lin_Projection:
         self.input = input_dim
         self.output = output_dim
 
-        self.W = model.add_parameters((self.output,self.input))
+        Saxe_initializer = Saxe.Orthogonal()
+        self.W = model.add_parameters((self.output,self.input), init=dy.NumpyInitializer(Saxe_initializer(((self.output,self.input)))))
         self.b = model.add_parameters((self.output), init = dy.ConstInitializer(0))
 
 

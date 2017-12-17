@@ -1,8 +1,9 @@
 #Run python programm with command line arguments
-#Also keep a log file for the console output and shutdown when finish
+#Also keep a log file for the console output
 
 stdbuf -oL python3 -u biaffine_parser.py --dynet-seed 123456789 \
 --epochs 4000 \
+--dynet-devices GPU:0 \
 --predict-batch 32 \
 --batch-tokens 3000 \
 --dropout 0.33 \
@@ -21,5 +22,3 @@ stdbuf -oL python3 -u biaffine_parser.py --dynet-seed 123456789 \
 do
 tee -a model_log.txt
 done
-
-# sudo shutdown -P +2

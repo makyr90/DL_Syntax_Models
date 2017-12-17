@@ -45,18 +45,17 @@ if __name__ == '__main__':
         with open(os.path.join(options.output, options.params), 'rb') as paramsfp:
             words, w2i, c2i, pos, xpos, rels, stored_opt = pickle.load(paramsfp)
 
-        stored_opt.external_embedding = options.external_embedding
-        ext_words_train = utils.ext_vocab(options.conll_train,options.external_embedding_voc)
-        ext_words_test = utils.ext_vocab(options.conll_test,options.external_embedding_voc)
+        ext_words_train = utils.ext_vocab(stored_opt.conll_train,stored_opt.external_embedding_voc)
+        ext_words_test = utils.ext_vocab(options.conll_test,stored_opt.external_embedding_voc)
 
         print('Loading pre-trained  model')
         biaf_parser = learner.biAffine_parser(words, pos, xpos, rels, w2i, c2i, ext_words_train, ext_words_test, stored_opt)
-        biaf_parser.Load(options.model)
+        biaf_parser.Load(os.path.join(options.output, os.path.basename(options.model)))
 
         tespath = os.path.join(options.output, options.conll_test_output)
         print('Predicting  parsing dependencies')
         ts = time.time()
-        test_res = list(biaf_parser.Predict(options.conll_test))
+        test_res = list(biaf_parser.Predict(options.conll_test,True))
         te = time.time()
         print('Finished in', te-ts, 'seconds.')
         utils.write_conll(tespath, test_res)

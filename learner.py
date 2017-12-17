@@ -1,8 +1,8 @@
 import dynet as dy
-from utils import read_conll, write_conll, orthonormal_initializer
+from utils import read_conll, write_conll
 from biaffine import DeepBiaffineAttentionDecoder
 from char_attention import HybridCharacterAttention
-from NN import Lin_Projection, MLP
+from NN import Lin_Projection
 import  time, random, utils, pickle
 import numpy as np
 
@@ -76,7 +76,7 @@ class biAffine_parser:
 
 
         self.biaffineParser = DeepBiaffineAttentionDecoder(self.model, len(self.rels), src_ctx_dim=self.ldims * 2,
-                    n_arc_mlp_units=400, n_label_mlp_units=100, arc_mlp_dropout=self.dropout, label_mlp_dropout=self.dropout)
+                    n_arc_mlp_units=500, n_label_mlp_units=100, arc_mlp_dropout=self.dropout, label_mlp_dropout=self.dropout)
 
         self.HybridCharembs = HybridCharacterAttention(self.model,layers=1,ldims=400,input_size=self.cdims,output_size=self.wdims,dropout=self.dropout)
 
@@ -87,7 +87,7 @@ class biAffine_parser:
         self.xposlookup = self.model.add_lookup_parameters((len(self.xpos) + 3, self.posdims),init = dy.ConstInitializer(0))
         #0 for unknown 1 for [initial] and 2 for [PAD]
 
-        self.clookup = self.model.add_lookup_parameters((len(c2i), self.cdims),init = dy.ConstInitializer(0))
+        self.clookup = self.model.add_lookup_parameters((len(c2i), self.cdims), init = dy.NormalInitializer())
 
 
     def Save(self, filename):
@@ -98,7 +98,7 @@ class biAffine_parser:
         self.model.populate(filename)
 
 
-    def Predict(self, conll_path):
+    def Predict(self, conll_path, test=False):
 
         # Batched predictions
         self.fwdLSTM.disable_dropout()
@@ -111,7 +111,8 @@ class biAffine_parser:
             conll_sentence = [entry for entry in sentence  if isinstance(entry, utils.ConllEntry)]
             conll_sentences.append(conll_sentence)
 
-        conll_sentences.sort(key=lambda x: -len(x))
+        if not test:
+            conll_sentences.sort(key=lambda x: -len(x))
         test_batches = [x*self.pred_batch_size for x in range(int((len(conll_sentences)-1)/self.pred_batch_size + 1))]
 
         for batch in test_batches:
@@ -127,7 +128,7 @@ class biAffine_parser:
             extwids = []
             wordChars =[]
             masks = []
-            for i in range(len(sentences[0])):
+            for i in range(max([len(x) for x in sentences])):
                 wids.append([(int(self.vocab.get(sent[i].norm, 0)) if len(sent) > i else 2) for sent in sentences]) #2 is the word id for pad symbol
                 posids.append([(int(self.pos.get(sent[i].pos,0)) if len(sent) > i else 2) for sent in sentences])
                 xposids.append([(int(self.xpos.get(sent[i].xpos,0)) if len(sent) > i else 2) for sent in sentences])
@@ -189,6 +190,8 @@ class biAffine_parser:
                 for entry,head, relation in zip(sent,pred_heads[idx], pred_labels[idx]):
                         entry.pred_parent_id = head
                         entry.pred_relation = self.irels[relation]
+
+
 
                 yield sent
 

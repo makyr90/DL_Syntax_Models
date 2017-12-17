@@ -1,7 +1,6 @@
 import dynet as dy
 import numpy as np
-from utils import orthonormal_initializer
-
+import Saxe
 
 class HybridCharacterAttention(object):
 
@@ -16,8 +15,9 @@ class HybridCharacterAttention(object):
         self.dropout = dropout
         self.charlstm  = dy.VanillaLSTMBuilder(self.layers, self.input, self.ldims, model, forget_bias = 0.0)
 
-        self.W_atten = model.add_parameters((self.ldims,1))
-        self.W_linear = model.add_parameters((self.output,2*self.ldims))
+        Saxe_initializer = Saxe.Orthogonal()
+        self.W_atten = model.add_parameters((self.ldims,1), init=dy.NumpyInitializer(Saxe_initializer(((self.ldims,1)))))
+        self.W_linear = model.add_parameters((self.output,2*self.ldims),init = dy.ConstInitializer(0))
         self.b_linear = model.add_parameters((self.output),init = dy.ConstInitializer(0))
 
     def predict_sequence_batched(self,inputs,mask_array,wlen,src_len,batch_size,predictFlag = False):

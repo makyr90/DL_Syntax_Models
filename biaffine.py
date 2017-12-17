@@ -1,10 +1,9 @@
 import copy
 import dynet as dy
 import numpy as np
-from mst import mst
+from Edmonds_decoder import parse_proj
 from collections import defaultdict
-from utils import orthonormal_initializer
-
+import Saxe
 
 class DeepBiaffineAttentionDecoder(object):
     """ For MST dependency parsing (ICLR 2017)"""
@@ -20,37 +19,37 @@ class DeepBiaffineAttentionDecoder(object):
 
         #Add lookup matrix for distance embedings in the range [-15,15]. Plus two
         #more embeddings for distances larger than +15 and -15
-        self.dist2id = defaultdict(lambda: len(self.dist2id))
-        for x in range(0,17):
-            self.dist2id[x]
-        for x in range(-1,-17,-1):
-            self.dist2id[x]
-        self.distembs = model.add_lookup_parameters((len(self.dist2id), 64))
+        # self.dist2id = defaultdict(lambda: len(self.dist2id))
+        # for x in range(0,17):
+        #     self.dist2id[x]
+        # for x in range(-1,-17,-1):
+        #     self.dist2id[x]
+        # self.distembs = model.add_lookup_parameters((len(self.dist2id), 64),init = dy.NormalInitializer())
 
 
-        self.W_arc_dist = model.add_parameters((64))
-
+        #self.W_arc_dist = model.add_parameters((64), init = dy.ConstInitializer(0))
+        Saxe_initializer = Saxe.Orthogonal(gain='leaky_relu',alpha = 0.1)
         self.src_ctx_dim = src_ctx_dim
         self.label_mlp_dropout = label_mlp_dropout
         self.arc_mlp_dropout = arc_mlp_dropout
         self.n_labels = n_labels
-        self.W_arc_hidden_to_head = model.add_parameters((n_arc_mlp_units, src_ctx_dim))
+        self.W_arc_hidden_to_head = model.add_parameters((n_arc_mlp_units, src_ctx_dim), init=dy.NumpyInitializer(Saxe_initializer(((n_arc_mlp_units, src_ctx_dim)))))
         self.b_arc_hidden_to_head = model.add_parameters((n_arc_mlp_units,),init = dy.ConstInitializer(0))
-        self.W_arc_hidden_to_dep = model.add_parameters((n_arc_mlp_units, src_ctx_dim))
+        self.W_arc_hidden_to_dep = model.add_parameters((n_arc_mlp_units, src_ctx_dim), init=dy.NumpyInitializer(Saxe_initializer(((n_arc_mlp_units, src_ctx_dim)))))
         self.b_arc_hidden_to_dep = model.add_parameters((n_arc_mlp_units,),init = dy.ConstInitializer(0))
 
-        self.W_label_hidden_to_head = model.add_parameters((n_label_mlp_units, src_ctx_dim))
+        self.W_label_hidden_to_head = model.add_parameters((n_label_mlp_units, src_ctx_dim), init=dy.NumpyInitializer(Saxe_initializer(((n_label_mlp_units, src_ctx_dim)))))
         self.b_label_hidden_to_head = model.add_parameters((n_label_mlp_units,),init = dy.ConstInitializer(0))
-        self.W_label_hidden_to_dep = model.add_parameters((n_label_mlp_units, src_ctx_dim))
+        self.W_label_hidden_to_dep = model.add_parameters((n_label_mlp_units, src_ctx_dim), init=dy.NumpyInitializer(Saxe_initializer(((n_label_mlp_units, src_ctx_dim)))))
         self.b_label_hidden_to_dep = model.add_parameters((n_label_mlp_units,),init = dy.ConstInitializer(0))
 
-        self.U_arc_1 = model.add_parameters((n_arc_mlp_units, n_arc_mlp_units))
+        self.U_arc_1 = model.add_parameters((n_arc_mlp_units, n_arc_mlp_units), init = dy.ConstInitializer(0))
         self.u_arc_2 = model.add_parameters((n_arc_mlp_units),init = dy.ConstInitializer(0))
 
-        self.U_label_1 = [model.add_parameters((n_label_mlp_units, n_label_mlp_units)) for _ in range(n_labels)]
-        self.u_label_2_2 = [model.add_parameters((1, n_label_mlp_units)) for _ in range(n_labels)]
-        self.u_label_2_1 = [model.add_parameters((n_label_mlp_units, 1)) for _ in range(n_labels)]
-        self.W_label_dist = [model.add_parameters((64)) for _ in range(n_labels)]
+        self.U_label_1 = [model.add_parameters((n_label_mlp_units, n_label_mlp_units), init = dy.ConstInitializer(0)) for _ in range(n_labels)]
+        self.u_label_2_2 = [model.add_parameters((1, n_label_mlp_units), init = dy.ConstInitializer(0)) for _ in range(n_labels)]
+        self.u_label_2_1 = [model.add_parameters((n_label_mlp_units, 1), init = dy.ConstInitializer(0)) for _ in range(n_labels)]
+        #self.W_label_dist = [model.add_parameters((64),init = dy.ConstInitializer(0)) for _ in range(n_labels)]
         self.b_label = [model.add_parameters((1,),init = dy.ConstInitializer(0)) for _ in range(n_labels)]
 
 
@@ -76,12 +75,12 @@ class DeepBiaffineAttentionDecoder(object):
 
         U_arc_1 = dy.parameter(self.U_arc_1)
         u_arc_2 = dy.parameter(self.u_arc_2)
-        W_arc_dist = dy.parameter(self.W_arc_dist)
+        #W_arc_dist = dy.parameter(self.W_arc_dist)
 
         U_label_1 = [dy.parameter(x) for x in self.U_label_1]
         u_label_2_1 = [dy.parameter(x) for x in self.u_label_2_1]
         u_label_2_2 = [dy.parameter(x) for x in self.u_label_2_2]
-        W_label_dist = [dy.parameter(x) for x in self.W_label_dist]
+        #W_label_dist = [dy.parameter(x) for x in self.W_label_dist]
         b_label = [dy.parameter(x) for x in self.b_label]
 
         if predict:
@@ -95,67 +94,35 @@ class DeepBiaffineAttentionDecoder(object):
             h_label_head = dy.dropout(self.leaky_ReLu(dy.affine_transform([b_label_hidden_to_head, W_label_hidden_to_head, src_encodings])),self.label_mlp_dropout)
             h_label_dep = dy.dropout(self.leaky_ReLu(dy.affine_transform([b_label_hidden_to_dep, W_label_hidden_to_dep, src_encodings])),self.label_mlp_dropout)
 
-        #Use W^T * concat(head_i,head_j,dist_i,j) -->Significantly hurts the performance(hifgest LAS~70%!!)
-        # arc_Dist = []
-        # label_Dist = []
-        # for bidx in range(batch_size):
-        #     heads = dy.transpose(dy.pick_batch_elem(h_arc_head,bidx))
-        #     mods = dy.transpose(dy.pick_batch_elem(h_arc_dep,bidx))
-        #     heads_label = dy.transpose(dy.pick_batch_elem(h_label_head,bidx))
-        #     mods_label = dy.transpose(dy.pick_batch_elem(h_label_dep,bidx))
-        #     heads_mods = []
-        #     heads_mods_label =[]
-        #     for row in range(src_len):
-        #         head = dy.pick(heads,row)
-        #         head_label = dy.pick(heads_label,row)
-        #         for col in range(src_len):
-        #             mod = dy.pick(mods,col)
-        #             mod_label = dy.pick(mods_label,col)
-        #
-        #             if ((row - col) < 16 and (row - col) > -16):
-        #                 dist_emb = dy.lookup(self.distembs,self.dist2id[int(row-col)])
-        #
-        #             elif ((row - col)) >= 16:
-        #                 dist_emb = dy.lookup(self.distembs,self.dist2id[16])
-        #
-        #             else:
-        #                 dist_emb = dy.lookup(self.distembs,self.dist2id[-16])
-        #             heads_mods.append(dy.concatenate([head,mod,dist_emb]))
-        #             heads_mods_label.append(dy.concatenate([head_label,mod_label,dist_emb]))
-        #     arc_Dist.append(dy.transpose(dy.concatenate_cols(heads_mods)))
-        #     label_Dist.append(dy.transpose(dy.concatenate_cols(heads_mods_label)))
-        #
-        # arc_Dist = dy.concatenate_to_batch(arc_Dist)
-        # label_Dist = dy.concatenate_to_batch(label_Dist)
 
         #Add W^T * dist_emb[head_i,dep_j]
-        arc_Dist = []
-        for row in range(src_len):
-            for col in range(src_len):
-                if ((row - col) < 16 and (row - col) > -16):
-                    dist_emb = dy.lookup_batch(self.distembs,[self.dist2id[int(row-col)]] * batch_size)
-                elif ((row - col)) >= 16:
-                    dist_emb = dy.lookup_batch(self.distembs,[self.dist2id[16]] * batch_size)
-                else:
-                    dist_emb = dy.lookup_batch(self.distembs,[self.dist2id[-16]] * batch_size)
-
-                arc_Dist.append(dist_emb)
-
-
-        arc_Dist = dy.transpose(dy.concatenate_cols(arc_Dist))
+        # arc_Dist = []
+        # for row in range(src_len):
+        #     for col in range(src_len):
+        #         if ((row - col) < 16 and (row - col) > -16):
+        #             dist_emb = dy.lookup_batch(self.distembs,[self.dist2id[int(row-col)]] * batch_size)
+        #         elif ((row - col)) >= 16:
+        #             dist_emb = dy.lookup_batch(self.distembs,[self.dist2id[16]] * batch_size)
+        #         else:
+        #             dist_emb = dy.lookup_batch(self.distembs,[self.dist2id[-16]] * batch_size)
+        #
+        #         arc_Dist.append(dist_emb)
+        #
+        #
+        # arc_Dist = dy.transpose(dy.concatenate_cols(arc_Dist))
 
         h_arc_head_transpose = dy.transpose(h_arc_head)
         h_label_head_transpose = dy.transpose(h_label_head)
 
-        s_arc = h_arc_head_transpose * dy.colwise_add(U_arc_1 * h_arc_dep, u_arc_2) + dy.reshape((arc_Dist * W_arc_dist),(src_len,src_len),batch_size = batch_size)
+        s_arc = h_arc_head_transpose * dy.colwise_add(U_arc_1 * h_arc_dep, u_arc_2) #+ dy.reshape((arc_Dist * W_arc_dist),(src_len,src_len),batch_size = batch_size)
 
         s_label = []
-        for U_1, u_2_1, u_2_2, b, w_l in zip(U_label_1, u_label_2_1, u_label_2_2, b_label, W_label_dist):
+        for U_1, u_2_1, u_2_2, b in zip(U_label_1, u_label_2_1, u_label_2_2, b_label):
             e1 = h_label_head_transpose * U_1 * h_label_dep
             e2 = h_label_head_transpose * u_2_1 * dy.ones((1, src_len))
             e3 = dy.ones((src_len, 1)) * u_2_2 * h_label_dep
-            e4 = dy.reshape((arc_Dist * w_l),(src_len,src_len),batch_size = batch_size)
-            s_label.append(e1 + e2 + e3 + e4 + b)
+            #e4 = dy.reshape((arc_Dist * w_l),(src_len,src_len),batch_size = batch_size)
+            s_label.append(e1 + e2 + e3 +  b)
         return s_arc, s_label
 
     def decode_loss(self, src_encodings, masks, tgt_seqs):
@@ -192,16 +159,13 @@ class DeepBiaffineAttentionDecoder(object):
         pred_heads = []
         pred_labels = []
         s_arc, s_label = self.cal_scores(src_encodings,True)
-
         for idx in range(len(sentences_length)):
 
-            # NOTE: should transpose before calling `mst` method!
-
-            s_arc_values = dy.pick_batch_elem(s_arc,idx).npvalue().transpose()[:sentences_length[idx],:sentences_length[idx]]  # src_len, src_len
+            
+            s_arc_values = dy.pick_batch_elem(s_arc,idx).npvalue()[:sentences_length[idx],:sentences_length[idx]]  # src_len, src_len
             s_label_values = np.asarray([dy.pick_batch_elem(label,idx).npvalue() for label in s_label]).transpose((2, 1, 0))[:sentences_length[idx],:sentences_length[idx],:] # src_len, src_len, n_labels
-
             weights = s_arc_values
-            spred_heads = mst(weights)
+            spred_heads = parse_proj(weights)
             spred_labels = [np.argmax(labels[head]) for head, labels in zip(spred_heads, s_label_values)]
             pred_heads.append(spred_heads)
             pred_labels.append(spred_labels)

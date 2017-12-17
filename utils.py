@@ -21,12 +21,11 @@ class ConllEntry:
 
         self.pred_parent_id = None
         self.pred_relation = None
-        self.pred_pos = None
 
         self.idChars = []
 
     def __str__(self):
-        values = [str(self.id), self.form, self.lemma, self.pred_pos, self.xpos, self.feats, str(self.pred_parent_id) if self.pred_parent_id is not None else None, self.pred_relation, self.deps, self.misc]
+        values = [str(self.id), self.form, self.lemma, self.pos, self.xpos, self.feats, str(self.pred_parent_id) if self.pred_parent_id is not None else None, self.pred_relation, self.deps, self.misc]
         return '\t'.join(['_' if v is None else v for v in values])
 
 
@@ -196,27 +195,3 @@ def batch_train_data(conll_path,c2i,tokens_size=5000):
             tokens = 0
 
     return conll_sentences,train_batches
-
-
-def orthonormal_initializer(input_size, output_size):
-
-    I = np.eye(output_size)
-    lr = .1
-    eps = .05/(output_size + input_size)
-    success = False
-    while not success:
-        Q = np.random.randn(input_size, output_size) / np.sqrt(output_size)
-        for i in range(100):
-            QTQmI = Q.T.dot(Q) - I
-            loss = np.sum(QTQmI**2 / 2)
-            Q2 = Q**2
-            Q -= lr*Q.dot(QTQmI) / (np.abs(Q2 + Q2.sum(axis=0, keepdims=True) + Q2.sum(axis=1, keepdims=True) - 1) + eps)
-            if np.isnan(Q[0,0]):
-                lr /= 2
-                break
-        if np.isfinite(loss) and np.max(Q) < 1e6:
-            success = True
-        eps *= 2
-    print('Orthogonal pretrainer loss: %.2e' % loss)
-
-    return Q.astype(np.float32)

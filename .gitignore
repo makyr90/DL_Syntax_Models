@@ -1,3 +1,4 @@
+*.pred
 *.txt
 *.pyc
 *.vocab
