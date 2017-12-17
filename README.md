@@ -7,7 +7,6 @@
 - **LAS:** 85.75
 
 ## Vanilla model + Dist/dir embeddings(64D,[-15,15]) greek dev data(Accuracy):
-###Just Add to arc and arc_label biaffine formulas the term W^T * Dist_emb[head_i,dep_j]
 
 - **UAS:** 88.68  
 
