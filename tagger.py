@@ -142,7 +142,7 @@ if __name__ == '__main__':
 
 
                     score = ((float(posCount) * 100 / count) + (float(xposCount) * 100 / count))/2
-                    if score >= highestScore:
+                    if score > highestScore:
                         tagger.Save(os.path.join(options.output, os.path.basename(options.model)))
                         highestScore = score
                         tsId = t_step

@@ -63,14 +63,13 @@ class Affine_tagger:
 
             print('Load external embeddings. External embeddings vectors dimension', self.edim)
 
-        print("Dropout probability for MLP's hidden layers & LSTM's hidden/reccurent units:", self.dropout)
 
         self.fwdLSTM = dy.VanillaLSTMBuilder(self.layers, self.wdims, self.ldims, self.model,forget_bias = 0.0)
         self.bwdLSTM = dy.VanillaLSTMBuilder(self.layers, self.wdims, self.ldims, self.model, forget_bias = 0.0)
 
 
         self.affineTagger = affineAttentionDecoder(self.model, len(self.ipos), len(self.ixpos), src_ctx_dim=self.ldims * 2, n_pos_tagger_mlp_units=500,
-                            n_xpos_tagger_mlp_units=500, mlps_dropout = self.dropout)
+                            n_xpos_tagger_mlp_units=500, mlps_dropout = 0.5)
 
         self.HybridCharembs = HybridCharacterAttention(self.model,layers=1,ldims=400,input_size=self.cdims,output_size=self.wdims,dropout=self.dropout)
 

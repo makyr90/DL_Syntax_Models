@@ -13,7 +13,7 @@ class affineAttentionDecoder(object):
                  src_ctx_dim=400,
                  n_pos_tagger_mlp_units=500,
                  n_xpos_tagger_mlp_units=500,
-                 mlps_dropout=0.33):
+                 mlps_dropout=0.5):
 
 
 
@@ -64,8 +64,11 @@ class affineAttentionDecoder(object):
             xpos = self.leaky_ReLu(dy.affine_transform([b_xpos, W_xpos, src_encodings]))
 
         else:
-            pos = dy.dropout(self.leaky_ReLu(dy.affine_transform([b_pos, W_pos, src_encodings])),self.dropout)  # n_pos_mlp_units, src_len, bs
-            xpos = dy.dropout(self.leaky_ReLu(dy.affine_transform([b_xpos, W_xpos, src_encodings])),self.dropout)
+
+            pos = self.leaky_ReLu(dy.affine_transform([b_pos, W_pos, src_encodings]))  # n_pos_mlp_units, src_len, bs
+            pos = dy.dropout(pos, self.dropout)
+            xpos = self.leaky_ReLu(dy.affine_transform([b_xpos, W_xpos, src_encodings]))
+            xpos = dy.dropout(xpos, self.dropout)
 
 
         pos_label = []
