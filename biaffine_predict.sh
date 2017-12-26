@@ -3,6 +3,6 @@
 python3 biaffine_parser.py --predict \
 --model el_model.model \
 --params el_model.paramsdr \
---outdir sample/ \
---test sample/el-ud-test_predicted_posxpos.conllu \
+--outdir data/ \
+--test data/el-ud-test_predicted_posxpos.conllu \
 --output el-ud-test.conllu.pred
