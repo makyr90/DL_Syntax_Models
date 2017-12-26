@@ -44,7 +44,7 @@ def parse_proj(scores_matrix, gold=None):
 		if head == 0:
 			rootCount += 1
 
-	if (rootCount == 1):
+	if ((rootCount == 1) or (gold is not None)):
 		return heads
 
 	else:

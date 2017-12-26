@@ -76,7 +76,7 @@ class biAffine_parser:
 
 
         self.biaffineParser = DeepBiaffineAttentionDecoder(self.model, len(self.rels), src_ctx_dim=self.ldims * 2,
-                    n_arc_mlp_units=500, n_label_mlp_units=100, arc_mlp_dropout=self.dropout, label_mlp_dropout=self.dropout)
+                    n_arc_mlp_units=400, n_label_mlp_units=100, arc_mlp_dropout=self.dropout, label_mlp_dropout=self.dropout)
 
         self.HybridCharembs = HybridCharacterAttention(self.model,layers=1,ldims=400,input_size=self.cdims,output_size=self.wdims,dropout=self.dropout)
 
@@ -199,13 +199,12 @@ class biAffine_parser:
 
         #Independently dropout word & pos embeddings. If both are dropped replace with zeros.
         #If only one is dropped scale the other to compensate. Otherwise keep both
-        #Use the same dropout mask for both forward and backword LSTMs
         w_dropout = []
         p_dropout = []
         for wid in wids:
+            wemb_Dropflag = random.random() < self.dropout
+            posemb_Dropflag = random.random() < self.dropout
             if (wid != 2):
-                wemb_Dropflag = random.random() < self.dropout
-                posemb_Dropflag = random.random() < self.dropout
                 if (wemb_Dropflag and posemb_Dropflag):
                     w_dropout.append(0)
                     p_dropout.append(0)
@@ -283,18 +282,7 @@ class biAffine_parser:
             for cid in char_ids:
                 char_embs.append(dy.lookup_batch(self.clookup, cid))
             wordslen = list(map(lambda x:len(x),wch))
-
             chr_embs = self.HybridCharembs.predict_sequence_batched(char_embs,chars_mask,wordslen,char_src_len,batch_size)
-
-            #Unbatched character embeddings
-            # chr_embs = []
-            # for char_list in wch:
-            #     if len(char_list) > 0:
-            #         chr_embs.append(self.HybridCharembs.predict_sequence([self.clookup[char] for char in char_list]))
-            #     else:
-            #         chr_embs.append(dy.zeros(self.wdims))
-            #
-            # chr_embs = dy.concatenate_to_batch(chr_embs)
 
             extwembs = dy.lookup_batch(self.elookup_train,extwid)
             proj_ext_word_embs = self.projective_embs(extwembs)

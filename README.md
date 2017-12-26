@@ -1,13 +1,14 @@
 # Dozat et al. model for dependency parsing implemented in DyNet Framework using Python3
 
-## Vanilla model greek dev data(Accuracy):
+## Greek dev data Accuracy(using predicted POS/XPOS)
 
-- **UAS:** 88.21  
+- **UAS:** 88.42  
 
-- **LAS:** 85.75
+- **LAS:** 85.88
 
-## Vanilla model + Dist/dir embeddings(64D,[-15,15]) greek dev data(Accuracy):
 
-- **UAS:** 88.68  
+## Greek test data Accuracy(using predicted POS/XPOS)
 
-- **LAS:** 86.48
+- **UAS:** 89.89
+
+- **LAS:** 87.29

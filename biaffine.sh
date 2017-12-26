@@ -3,7 +3,6 @@
 
 stdbuf -oL python3 -u biaffine_parser.py --dynet-seed 123456789 \
 --epochs 4000 \
---dynet-devices GPU:0 \
 --predict-batch 32 \
 --batch-tokens 3000 \
 --dropout 0.33 \
@@ -17,8 +16,8 @@ stdbuf -oL python3 -u biaffine_parser.py --dynet-seed 123456789 \
 --model el_model.model \
 --params el_model.paramsdr \
 --outdir sample/ \
---train sample/el-ud-train.conllu \
---dev sample/el-ud-dev.conllu |  while IFS= read -r line
+--train data/el-ud-train.conllu \
+--dev data/el-ud-dev.conllu |  while IFS= read -r line
 do
 tee -a model_log.txt
 done

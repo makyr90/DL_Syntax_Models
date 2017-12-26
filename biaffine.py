@@ -12,7 +12,7 @@ class DeepBiaffineAttentionDecoder(object):
                  model,
                  n_labels,
                  src_ctx_dim=400,
-                 n_arc_mlp_units=500,
+                 n_arc_mlp_units=400,
                  n_label_mlp_units=100,
                  arc_mlp_dropout=0.33,
                  label_mlp_dropout=0.33):
@@ -89,10 +89,18 @@ class DeepBiaffineAttentionDecoder(object):
             h_label_head = self.leaky_ReLu(dy.affine_transform([b_label_hidden_to_head, W_label_hidden_to_head, src_encodings]))
             h_label_dep = self.leaky_ReLu(dy.affine_transform([b_label_hidden_to_dep, W_label_hidden_to_dep, src_encodings]))
         else:
-            h_arc_head = dy.dropout(self.leaky_ReLu(dy.affine_transform([b_arc_hidden_to_head, W_arc_hidden_to_head, src_encodings])),self.arc_mlp_dropout)  # n_arc_ml_units, src_len, bs
-            h_arc_dep = dy.dropout(self.leaky_ReLu(dy.affine_transform([b_arc_hidden_to_dep, W_arc_hidden_to_dep, src_encodings])),self.arc_mlp_dropout)
-            h_label_head = dy.dropout(self.leaky_ReLu(dy.affine_transform([b_label_hidden_to_head, W_label_hidden_to_head, src_encodings])),self.label_mlp_dropout)
-            h_label_dep = dy.dropout(self.leaky_ReLu(dy.affine_transform([b_label_hidden_to_dep, W_label_hidden_to_dep, src_encodings])),self.label_mlp_dropout)
+
+            src_encodings = dy.dropout_dim(src_encodings,1,self.arc_mlp_dropout)
+
+            h_arc_head = self.leaky_ReLu(dy.affine_transform([b_arc_hidden_to_head, W_arc_hidden_to_head, src_encodings]))  # n_arc_ml_units, src_len, bs
+            h_arc_head  = dy.dropout_dim(h_arc_head,1,self.arc_mlp_dropout)
+            h_arc_dep = self.leaky_ReLu(dy.affine_transform([b_arc_hidden_to_dep, W_arc_hidden_to_dep, src_encodings]))
+            h_arc_dep = dy.dropout_dim(h_arc_dep,1,self.arc_mlp_dropout)
+
+            h_label_head = self.leaky_ReLu(dy.affine_transform([b_label_hidden_to_head, W_label_hidden_to_head, src_encodings]))
+            h_label_head  = dy.dropout_dim(h_label_head,1,self.label_mlp_dropout)
+            h_label_dep = self.leaky_ReLu(dy.affine_transform([b_label_hidden_to_dep, W_label_hidden_to_dep, src_encodings]))
+            h_label_dep  = dy.dropout_dim(h_label_dep,1,self.label_mlp_dropout)
 
 
         #Add W^T * dist_emb[head_i,dep_j]
@@ -161,7 +169,7 @@ class DeepBiaffineAttentionDecoder(object):
         s_arc, s_label = self.cal_scores(src_encodings,True)
         for idx in range(len(sentences_length)):
 
-            
+
             s_arc_values = dy.pick_batch_elem(s_arc,idx).npvalue()[:sentences_length[idx],:sentences_length[idx]]  # src_len, src_len
             s_label_values = np.asarray([dy.pick_batch_elem(label,idx).npvalue() for label in s_label]).transpose((2, 1, 0))[:sentences_length[idx],:sentences_length[idx],:] # src_len, src_len, n_labels
             weights = s_arc_values
