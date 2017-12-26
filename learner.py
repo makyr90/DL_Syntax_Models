@@ -69,8 +69,7 @@ class biAffine_parser:
 
             print('Load external embeddings. External embeddings vectors dimension', self.edim)
 
-        print("Dropout probability for MLP's hidden layers & LSTM's hidden/reccurent units:", self.dropout)
-
+        
         self.fwdLSTM = dy.VanillaLSTMBuilder(self.layers, self.wdims + self.posdims, self.ldims, self.model,forget_bias = 0.0)
         self.bwdLSTM = dy.VanillaLSTMBuilder(self.layers, self.wdims + self.posdims, self.ldims, self.model, forget_bias = 0.0)
 
