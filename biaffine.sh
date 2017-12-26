@@ -15,7 +15,7 @@ stdbuf -oL python3 -u biaffine_parser.py --dynet-seed 123456789 \
 --lstmdims 200 \
 --model el_model.model \
 --params el_model.paramsdr \
---outdir sample/ \
+--outdir data/ \
 --train data/el-ud-train.conllu \
 --dev data/el-ud-dev.conllu |  while IFS= read -r line
 do
