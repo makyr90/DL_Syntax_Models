@@ -1,0 +1,8 @@
+*.pred
+*.txt
+*.pyc
+*.vocab
+*.npy
+*.conllu
+*.model
+*.paramsdr
