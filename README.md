@@ -1,12 +1,14 @@
-## Greek test data F1-score(Dozat pos/xpos predictions + baseline sentence splitter & tokenizer):
+#Simple Depedency Parser
 
-- **UAS: 90.07**  
+Greek test data F1-score(Dozat pos/xpos predictions + baseline sentence splitter & tokenizer):
 
-- **LAS:87.78**
+- **UAS:** 90.07  
+
+- **LAS:** 87.78
 
 
-## Dutch test data F1-score(Dozat pos/xpos predictions + baseline sentence splitter & tokenizer):
+Dutch test data F1-score(Dozat pos/xpos predictions + baseline sentence splitter & tokenizer):
 
-- **UAS: 83.49**  
+- **UAS:** 83.49  
 
-- **LAS:78.64**
+- **LAS:** 78.64
