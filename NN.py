@@ -1,5 +1,7 @@
+
 import dynet as dy
 import Saxe
+import numpy as np
 
 class MLP:
     """ MLP with 1 hidden Layer """
@@ -59,3 +61,10 @@ class Lin_Projection:
         output = dy.affine_transform([b,W,inputs])
 
         return output
+
+    def L2_req_term(self):
+
+        W = dy.parameter(self.W)
+        WW = W *dy.transpose(W)
+        loss = dy.squared_norm(WW - dy.inputTensor(np.eye(self.output))) / 2
+        return loss

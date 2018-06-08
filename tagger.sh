@@ -2,10 +2,9 @@
 #Also keep a log file for the console output
 
 stdbuf -oL python3 -u tagger.py --dynet-seed 123456789 \
---epochs 4000 \
---dynet-devices GPU:1 \
---predict-batch 32 \
---batch-tokens 3000 \
+--dynet-devices CPU \
+--predict-batch 64 \
+--batch-tokens 5000 \
 --dropout 0.33 \
 --extrn data/gr_fasttext.npy \
 --extrn-voc data/gr_fasttext.vocab \

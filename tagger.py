@@ -1,6 +1,6 @@
 # coding=utf-8
 from optparse import OptionParser
-import pickle, utils, learner, os, sys, os.path, time, random
+import pickle, utils, learner, os, sys, time, random
 
 
 
@@ -38,8 +38,6 @@ if __name__ == '__main__':
 
     (options, args) = parser.parse_args()
 
-    print('Using external embedding:', options.external_embedding)
-
     if options.predictFlag:
         with open(os.path.join(options.output, options.params), 'rb') as paramsfp:
             words, w2i, c2i, pos, xpos, stored_opt = pickle.load(paramsfp)
@@ -50,11 +48,20 @@ if __name__ == '__main__':
         print('Loading pre-trained  model')
         tagger = learner.Affine_tagger(words, pos, xpos,  w2i, c2i, ext_words_train, ext_words_test, stored_opt)
         tagger.Load(os.path.join(options.output, os.path.basename(options.model)))
+        tagger.pred_batch_size = options.pred_batch_size
+
+        with open(options.conll_test, 'r') as conllFP:
+            devData = list(utils.read_conll(conllFP, tagger.c2i))
+
+        conll_sentences = []
+        for sentence in devData:
+            conll_sentence = [entry for entry in sentence  if isinstance(entry, utils.ConllEntry)]
+            conll_sentences.append(conll_sentence)
 
         tespath = os.path.join(options.output, options.conll_test_output)
         print('Predicting  POS XPOS tags')
         ts = time.time()
-        test_res = list(tagger.Predict(options.conll_test,True))
+        test_res = list(tagger.Predict(conll_sentences,True))
         te = time.time()
         print('Finished in', te-ts, 'seconds.')
         utils.write_conll(tespath, test_res)
@@ -65,39 +72,34 @@ if __name__ == '__main__':
         ext_words_train = utils.ext_vocab(options.conll_train,options.external_embedding_voc)
         ext_words_dev = utils.ext_vocab(options.conll_dev,options.external_embedding_voc)
 
-        if (options.last_epoch == 0):
+        print('Extracting vocabulary')
+        words, w2i, c2i, pos, xpos = utils.vocab(options.conll_train)
 
-            print('Extracting vocabulary')
-            words, w2i, c2i, pos, xpos = utils.vocab(options.conll_train)
+        with open(os.path.join(options.output, options.params), 'wb') as paramsfp:
+            pickle.dump((words, w2i, c2i, pos, xpos, options), paramsfp)
 
-            with open(os.path.join(options.output, options.params), 'wb') as paramsfp:
-                pickle.dump((words, w2i, c2i, pos, xpos, options), paramsfp)
+        print('Initializing  model')
+        tagger = learner.Affine_tagger(words, pos, xpos,  w2i, c2i, ext_words_train, ext_words_dev, options)
 
-            print('Initializing  model')
-            tagger = learner.Affine_tagger(words, pos, xpos,  w2i, c2i, ext_words_train, ext_words_dev, options)
+        with open(options.conll_dev, 'r') as conllFP:
+            devData = list(utils.read_conll(conllFP, tagger.c2i))
 
-            with open("Results.txt", "a") as results:
-                results.write("T_Step\tPOS\tXPOS\n")
-        else:
-
-            with open(os.path.join(options.output, options.params), 'rb') as paramsfp:
-                words, w2i, c2i, pos, xpos, stored_opt = pickle.load(paramsfp)
-
-
-            stored_opt.external_embedding = options.external_embedding
-
-            print('Loading  model')
-
-            tagger = learner.Affine_tagger(words, pos, xpos,  w2i, c2i, ext_words_train, ext_words_dev, stored_opt)
-            tagger.Load(os.path.join(options.output, os.path.basename(options.model)))
+        conll_sentences = []
+        for sentence in devData:
+            conll_sentence = [entry for entry in sentence  if isinstance(entry, utils.ConllEntry)]
+            conll_sentences.append(conll_sentence)
 
 
+        with open("Results.txt", "a") as results:
+            results.write("T_Step\tPOS\tXPOS\n")
 
-        sentences,train_batches = utils.batch_train_data(options.conll_train,c2i,options.batch_tokens)
+
+        sentences,train_batches = utils.batch_data(options.conll_train,c2i,options.batch_tokens)
         batches = len(train_batches)
         highestScore = options.highest_score
         tsId = options.last_epoch*batches
         for epoch in range(options.last_epoch,options.epochs):
+            print("Starting epoch ",epoch+1)
             random.shuffle(train_batches)
             for idx,mini_batch in enumerate(train_batches):
                 t_step = (epoch * batches) +idx+1
@@ -115,7 +117,7 @@ if __name__ == '__main__':
                 else:
                     print("Performance on Dev data")
                     start = time.time()
-                    devPredSents = tagger.Predict(options.conll_dev)
+                    devPredSents = tagger.Predict(conll_sentences)
                     count = 0
                     posCount = 0
                     xposCount = 0
@@ -148,8 +150,11 @@ if __name__ == '__main__':
                         tsId = t_step
 
                     print("Highest avg POS/XPOS(@Dev): %.2f at trainning step %d" % (highestScore,tsId))
-
+                    print("-------------------------------------------------------------------")
                     if ((t_step - tsId) > 5000):
                         print("Model trainning finish..")
                         print("Model  didn't improve during the last 5000 trainning steps")
+                        sys.exit()
+                    elif (t_step > 30000):
+                        print("Model trainning finish..")
                         sys.exit()
