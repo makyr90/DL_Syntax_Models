@@ -3,14 +3,14 @@ import sys
 import pickle
 
 def file_len(fname):
-    with open(fname) as f:
+    with open(fname,'r', encoding="utf-8", newline='\n',errors='ignore') as f:
         for idx, line in enumerate(f):
             pass
     return idx
 
-rows =  file_len(sys.argv[1]) 
+rows =  file_len(sys.argv[1])
 print("Embeddings matrix length",rows)
-fh=open(sys.argv[1],'r', encoding='utf-8', newline='\n')
+fh=open(sys.argv[1],'r', encoding="utf-8", newline='\n',errors='ignore')
 foutname=sys.argv[2]
 dim = int(sys.argv[3])
 
@@ -21,7 +21,7 @@ for i,line in enumerate(fh):
         continue #skip header
     line = line.rstrip().split(' ')
     values = line[1:]
-    if (len(values)==300):
+    if (len(values)==dim):
         vocab[line[0].lower()] = i-1
         wvecs[i-1,:] = values
     else:

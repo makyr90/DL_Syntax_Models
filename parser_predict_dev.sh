@@ -5,5 +5,5 @@ python3 parser.py --predict \
 --model el_model.model \
 --params el_model.paramsdr \
 --outdir data/ \
---test data/el.conllu \
---output el-ud-test.conllu.pred
+--test data/el-ud-dev.conllu \
+--output el-ud-dev.conllu.pred

@@ -42,8 +42,6 @@ def vocab(conll_path):
     c2i["NUM"] = 3
     c2i["PAD"] = 4
 
-    # root = ConllEntry(0, '*root*', '*root*', 'ROOT-POS', 'ROOT-CPOS', '_', -1,'rroot', '_', '_')
-    # root.idChars = [1,2]
     tokens = []
 
     for line in open(conll_path, 'r'):
@@ -79,7 +77,7 @@ def vocab(conll_path):
         xposCount.update([node.xpos for node in tokens if isinstance(node, ConllEntry)])
         relCount.update([node.relation for node in tokens if isinstance(node, ConllEntry)])
 
-    #Keep words that appears at least 3 times in the trainning corpus
+    #Keep words that appears at least twice in the trainning corpus
     wordsCount = {k: v for k, v in wordsCount.items() if v > 1}
 
     return (wordsCount, {w: i for i, w in enumerate(list(wordsCount.keys()))}, c2i, list(posCount.keys()),list(xposCount.keys()), list(relCount.keys()))
@@ -88,7 +86,6 @@ def ext_vocab(conll_path,ext_emb_file):
 
     ext_voc=  pickle.load( open( ext_emb_file, "rb" ) )
     wordsCount = Counter()
-    #root = ConllEntry(0, '*root*', '*root*', 'ROOT-POS', 'ROOT-CPOS', '_', -1, 'rroot', '_', '_')
     tokens = []
 
     for line in open(conll_path, 'r'):
@@ -115,11 +112,8 @@ def ext_vocab(conll_path,ext_emb_file):
 
 
 def read_conll(fh,c2i):
-    #Character vocabulary
-    # root = ConllEntry(0, '*root*', '*root*', 'ROOT-POS', 'ROOT-CPOS', '_', -1, 'rroot', '_', '_')
-    # root.idChars =[1,2]
-    tokens = []
 
+    tokens = []
 
     for line in fh:
         tok = line.strip().split('\t')
@@ -156,13 +150,12 @@ def write_conll(fn, conll_gen):
             fh.write('\n')
 
 
-#numberRegex = re.compile("[0-9]+|[0-9]+\\.[0-9]+|[0-9]+[0-9,]+");
 def normalize(word):
     return  word.lower()
 
 
 
-def batch_data(conll_path,c2i,tokens_size,train):
+def batch_data(conll_path,c2i,tokens_size):
 
     #Batch train/dev/test data. Each mini-batch has approximately 5000 tokens(default)
     #The size of minibatches is adjustable by the tokens_size parameter
@@ -174,9 +167,8 @@ def batch_data(conll_path,c2i,tokens_size,train):
         conll_sentence = [entry for entry in sentence  if isinstance(entry, ConllEntry)]
         conll_sentences.append(conll_sentence)
 
-    if train:
-        conll_sentences.sort(key=lambda x: -len(x))
-        conll_sentences = list(filter(lambda x: len(x)<=80,conll_sentences))
+    conll_sentences.sort(key=lambda x: -len(x))
+    conll_sentences = list(filter(lambda x: len(x)<=80,conll_sentences))
     train_batches = []
     tokens = 0
     start_idx = 0

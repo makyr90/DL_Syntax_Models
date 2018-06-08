@@ -22,6 +22,7 @@ class parser:
         self.wdims = options.wembedding_dims
         self.cdims = options.cembedding_dims
         self.posdims = options.posembedding_dims
+        self.pred_batch_size = options.pred_batch_size
         self.ext_words_train = {word: ind+2 for word, ind in ext_words_train.items()}
         self.ext_words_devtest = {word: ind+2 for word, ind in ext_words_devtest.items()}
         self.wordsCount = vocab
@@ -68,7 +69,6 @@ class parser:
         self.bwdLSTM1 = LSTM(self.model, self.wdims+self.posdims, self.ldims, forget_bias = 0.0)
         self.fwdLSTM2 = LSTM(self.model, 2*self.ldims, self.ldims, forget_bias = 0.0)
         self.bwdLSTM2 = LSTM(self.model, 2*self.ldims, self.ldims, forget_bias = 0.0)
-
 
         self.attention = AttentionDecoder(self.model, len(self.rels), src_ctx_dim=self.ldims * 2, hidden=self.hidden2, dropout=self.dropout)
 
@@ -149,26 +149,17 @@ class parser:
         ext_lookup_batch = dy.lookup_batch(lookup_matrix,ext_embs_idx)
         projected_embs = self.projected_embs(ext_lookup_batch)
 
-        proj_embs = {}
+        embs = {}
         for idx in range(len(ext_embs_idx)):
-            proj_embs[idxtoword[ext_embs_idx[idx]]] = dy.pick_batch_elem(projected_embs,idx)
+            embs[idxtoword[ext_embs_idx[idx]]] = dy.pick_batch_elem(projected_embs,idx)
 
-        return proj_embs
+        return embs
 
 
-    def Predict(self, conll_path,test=False,pred_batch_size=32):
+    def Predict(self,conll_sentences,test=False):
 
         # Batched predictions
-
-        print("Predictions batch size = ",pred_batch_size)
-        with open(conll_path, 'r') as conllFP:
-            testData = list(read_conll(conllFP, self.c2i))
-
-        conll_sentences = []
-        for sentence in testData:
-            conll_sentence = [entry for entry in sentence  if isinstance(entry, utils.ConllEntry)]
-            conll_sentences.append(conll_sentence)
-
+        print("Predictions batch size = ",self.pred_batch_size)
         if not test:
             conll_sentences.sort(key=lambda x: -len(x))
             sents_len_r = reversed(list(map(lambda x:len(x),conll_sentences)))
@@ -179,9 +170,9 @@ class parser:
                 else:
                     break
             ones+=2
-            test_batches = [x*pred_batch_size for x in range(int((len(conll_sentences)-1-ones)/pred_batch_size + 1))]
+            test_batches = [x*self.pred_batch_size for x in range(int((len(conll_sentences)-1-ones)/self.pred_batch_size + 1))]
         else:
-            test_batches = [x*pred_batch_size for x in range(int((len(conll_sentences)-1)/pred_batch_size + 1))]
+            test_batches = [x*self.pred_batch_size for x in range(int((len(conll_sentences)-1)/self.pred_batch_size + 1))]
 
         for bdx in range(len(test_batches)):
 
@@ -193,7 +184,7 @@ class parser:
                     sentences = conll_sentences[test_batches[bdx]:]
             else:
                 batch = test_batches[bdx]
-                sentences = conll_sentences[batch:min(batch+pred_batch_size,len(conll_sentences))]
+                sentences = conll_sentences[batch:min(batch+self.pred_batch_size,len(conll_sentences))]
             sents_len = list(map(lambda x:len(x),sentences))
             dy.renew_cg()
             batch_size = len(sentences)
@@ -256,13 +247,12 @@ class parser:
             bwd_embs2 = bwd2.transduce(list(reversed(input_vecs2)),rmasks,True)
 
             src_encodings = [dy.concatenate([f, b]) for f, b in zip(fwd_embs2, list(reversed(bwd_embs2)))]
-            pred_heads, pred_labels = self.attention.decoding(src_encodings,masks,sents_len)
+            pred_heads, pred_labels = self.attention.decoding(src_encodings,masks,sents_len,test)
 
             for idx,sent in enumerate(sentences):
                 for entry,head, relation in zip(sent,pred_heads[idx], pred_labels[idx]):
                         entry.pred_parent_id = head
                         entry.pred_relation = self.irels[relation]
-
 
 
                 yield sent
@@ -302,9 +292,7 @@ class parser:
         batch_heads = []
         batch_labels = []
         batch_heads_labels_idx =[]
-
         for sentence in sentences:
-
             heads = [entry.parent_id for entry in sentence]
             labels = [self.rels[sentence[modifier].relation] for modifier, head in enumerate(heads)]
             heads_labels_idx = [head * len(self.rels) + label for head,label in zip(heads,labels)]
@@ -314,7 +302,6 @@ class parser:
             batch_heads.append(heads)
             batch_labels.append(labels)
             batch_heads_labels_idx.append(heads_labels_idx)
-
 
         RNN_embs = self.RNN_embeds(sentences)
         fasttext_embs = self.Ext_embeds(sentences)
@@ -364,16 +351,19 @@ class parser:
             posembs = dy.lookup_batch(self.poslookup, posid)
             xposembs = dy.lookup_batch(self.xposlookup, xposid)
             finalposembs = dy.esum([posembs,xposembs])
+
             #Apply word embeddings dropout mask
             word_dropout_mask = dy.inputVector(wemb_Dropout[idx])
             word_dropout_mask = dy.reshape(word_dropout_mask, (1,), batch_size)
             finalwembs = finalwembs * word_dropout_mask
+
             #Apply pos tag embeddings dropout mask
             pos_dropout_mask = dy.inputVector(posemb_Dropout[idx])
             pos_dropout_mask = dy.reshape(pos_dropout_mask, (1,), batch_size)
-            posembs = finalposembs * pos_dropout_mask
+            finalposembs = finalposembs * pos_dropout_mask
+
             #Concatenate word and pos tag embeddings
-            input_vecs.append(dy.concatenate([finalwembs,posembs]))
+            input_vecs.append(dy.concatenate([finalwembs,finalposembs]))
 
         masks = [[1]* batch_size] + masks
         rmasks = list(reversed(masks))
@@ -381,12 +371,10 @@ class parser:
         self.bwdLSTM1.set_dropouts(self.dropout,0.5)
         self.fwdLSTM2.set_dropouts(self.dropout, 0.5)
         self.bwdLSTM2.set_dropouts(self.dropout,0.5)
-
         self.fwdLSTM1.set_dropout_masks(batch_size)
         self.bwdLSTM1.set_dropout_masks(batch_size)
         self.fwdLSTM2.set_dropout_masks(batch_size)
         self.bwdLSTM2.set_dropout_masks(batch_size)
-
         fwd1 = self.fwdLSTM1.initial_state(batch_size)
         bwd1 = self.bwdLSTM1.initial_state(batch_size)
         fwd_embs1 = fwd1.transduce(input_vecs,masks)
@@ -396,7 +384,6 @@ class parser:
         bwd2 = self.bwdLSTM2.initial_state(batch_size)
         fwd_embs2 = fwd2.transduce(input_vecs2,masks)
         bwd_embs2 = bwd2.transduce(list(reversed(input_vecs2)),rmasks)
-        
 
         src_encodings = [dy.dropout(dy.concatenate([f, b]),self.dropout) for f, b in zip(fwd_embs2, list(reversed(bwd_embs2)))]
 
@@ -418,7 +405,6 @@ class parser:
 
 
         loss,words = self.calculate_loss(conll_sentences[mini_batch[0]:mini_batch[1]])
-        #loss += self.projected_embs.L2_req_term()
         train_loss += loss.value()
         loss.backward()
         total_words += words

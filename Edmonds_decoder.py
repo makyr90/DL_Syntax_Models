@@ -34,21 +34,21 @@ def parse_proj(scores_matrix, gold=None):
 	for k,v in newArcs.items():
 		newArcs[k] = Arcs[k]
 
-	heads = [-1 for _ in range(nr)]
+	heads = [0 for _ in range(nr)]
 	for k,v in newArcs.items():
 		heads[k[1]] = k[0]
 
 	#detect multiple roots
 	rootCount = 0
 	for head in heads[1:]:
-		if head == -1:
+		if head == 0:
 			rootCount += 1
 
 	if ((rootCount == 1) or (gold is not None)):
 		return heads
 
 	else:
-		root_indices = [idx+1 for idx,root in enumerate(heads[1:]) if root==-1]
+		root_indices = [idx+1 for idx,root in enumerate(heads[1:]) if root==0]
 		root_scores = [scores_matrix[0,root] for root in root_indices]
 		highest_scored_roots_idx= [idx for idx, score in zip(root_indices,root_scores) if score == max(root_scores)]
 		best_root_idx = random.choice(highest_scored_roots_idx)
@@ -72,14 +72,14 @@ def parse_proj(scores_matrix, gold=None):
 		for k,v in newArcs2.items():
 			newArcs2[k] = Arcs[k]
 
-		heads = [-1 for _ in range(nr)]
+		heads = [0 for _ in range(nr)]
 		for k,v in newArcs2.items():
 			heads[k[1]] = k[0]
 
 		#Eliminate multiple roots
 		rootCount = 0
 		for head in heads[1:]:
-			if head == -1:
+			if head == 0:
 				rootCount += 1
 		if (rootCount > 1):
 			print("Error!! MST contains more than one root!!")
