@@ -120,8 +120,8 @@ class LSTM():
                     cell_s.append(dy.pick_batch_elem(new_cell,jdx))
                     out.append(h_t)
                 else:
-                    recur_s.append(dy.pick_batch_elem(hidden,jdx)) #dy.nobackprop
-                    cell_s.append(dy.pick_batch_elem(cell,jdx)) #dy.nobackprop
+                    recur_s.append(dy.pick_batch_elem(hidden,jdx)) 
+                    cell_s.append(dy.pick_batch_elem(cell,jdx)) 
                     out.append(dy.zeros(self.recur_size))
 
             new_cell = dy.concatenate_to_batch(cell_s)
