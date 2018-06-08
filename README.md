@@ -2,13 +2,6 @@
 
 ###Greek test data F1-score(Dozat pos/xpos predictions + baseline sentence splitter & tokenizer):
 
-- **UAS:** 90.07  
+- **UAS:** 90.44  
 
-- **LAS:** 87.78
-
-
-###Dutch test data F1-score(Dozat pos/xpos predictions + baseline sentence splitter & tokenizer):
-
-- **UAS:** 83.49  
-
-- **LAS:** 78.64
+- **LAS:** 88.32
