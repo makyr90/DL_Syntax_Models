@@ -22,7 +22,7 @@ if __name__ == '__main__':
     parser.add_option("--cembedding", type="int", dest="cembedding_dims", default=64)
     parser.add_option("--batch-tokens", type="int", dest="batch_tokens", default=5000)
     parser.add_option("--predict-batch", type="int", dest="pred_batch_size", default=1)
-    parser.add_option("--epochs", type="int", dest="epochs", default=30)
+    parser.add_option("--epochs", type="int", dest="epochs", default=30000)
     parser.add_option("--lr", type="float", dest="learning_rate", default=2e-3)
     parser.add_option("--lstmlayers", type="int", dest="lstm_layers", default=2)
     parser.add_option("--lstmdims", type="int", dest="lstm_dims", default=128)
