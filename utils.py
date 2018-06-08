@@ -75,7 +75,7 @@ def vocab(conll_path):
         posCount.update([node.pos for node in tokens if isinstance(node, ConllEntry)])
         xposCount.update([node.xpos for node in tokens if isinstance(node, ConllEntry)])
 
-    #Keep words that appears at least twice in the trainning corpus
+    #Keep words that appears at least 3 times in the trainning corpus
     wordsCount = {k: v for k, v in wordsCount.items() if v > 2}
 
     return (wordsCount, {w: i for i, w in enumerate(list(wordsCount.keys()))}, c2i, list(posCount.keys()),list(xposCount.keys()))
