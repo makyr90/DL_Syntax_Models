@@ -115,7 +115,7 @@ if __name__ == '__main__':
                     parser.Train(sentences,mini_batch,t_step)
 
 
-                if (t_step <=10):
+                if (t_step <=5000):
                     if (t_step%100== 0):
                         print("Save Model...")
                         parser.Save(os.path.join(options.output, os.path.basename(options.model)))
