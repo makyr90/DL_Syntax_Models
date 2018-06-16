@@ -23,10 +23,10 @@ if __name__ == '__main__':
     parser.add_option("--batch-tokens", type="int", dest="batch_tokens", default=5000)
     parser.add_option("--predict-batch", type="int", dest="pred_batch_size", default=1)
     parser.add_option("--posembedding", type="int", dest="posembedding_dims", default=64)
-    parser.add_option("--epochs", type="int", dest="epochs", default=30)
+    parser.add_option("--epochs", type="int", dest="epochs", default=30000)
     parser.add_option("--lr", type="float", dest="learning_rate", default=2e-3)
-    parser.add_option("--lstmlayers", type="int", dest="lstm_layers", default=2)
-    parser.add_option("--lstmdims", type="int", dest="lstm_dims", default=128)
+    parser.add_option("--lstmdims", type="int", dest="lstm_dims", default=200)
+    parser.add_option("--hidden2", type="int", dest="hidden_2", default=400)
     parser.add_option("--predict", action="store_true", dest="predictFlag", default=False)
     parser.add_option("--dynet-seed", type="int", dest="seed", default=0)
     parser.add_option("--dynet-mem", type="int", dest="mem", default=0)
@@ -49,13 +49,24 @@ if __name__ == '__main__':
         ext_words_test = utils.ext_vocab(options.conll_test,stored_opt.external_embedding_voc)
 
         print('Loading pre-trained  model')
-        biaf_parser = learner.biAffine_parser(words, pos, xpos, rels, w2i, c2i, ext_words_train, ext_words_test, stored_opt)
-        biaf_parser.Load(os.path.join(options.output, os.path.basename(options.model)))
+        parser = learner.parser(words, pos, xpos, rels, w2i, c2i, ext_words_train, ext_words_test, stored_opt)
+        parser.Load(os.path.join(options.output, os.path.basename(options.model)))
+        parser.pred_batch_size = options.pred_batch_size
+
+        with open(options.conll_test, 'r') as conllFP:
+            devData = list(utils.read_conll(conllFP, parser.c2i))
+
+        conll_sentences = []
+        for sentence in devData:
+            conll_sentence = [entry for entry in sentence  if isinstance(entry, utils.ConllEntry)]
+            conll_sentences.append(conll_sentence)
+
+
 
         tespath = os.path.join(options.output, options.conll_test_output)
         print('Predicting  parsing dependencies')
         ts = time.time()
-        test_res = list(biaf_parser.Predict(options.conll_test,True))
+        test_res = list(parser.Predict(conll_sentences,True))
         te = time.time()
         print('Finished in', te-ts, 'seconds.')
         utils.write_conll(tespath, test_res)
@@ -66,57 +77,53 @@ if __name__ == '__main__':
         ext_words_train = utils.ext_vocab(options.conll_train,options.external_embedding_voc)
         ext_words_dev = utils.ext_vocab(options.conll_dev,options.external_embedding_voc)
 
-        if (options.last_epoch == 0):
+        print('Extracting vocabulary')
+        words, w2i, c2i, pos, xpos, rels = utils.vocab(options.conll_train)
 
-            print('Extracting vocabulary')
-            words, w2i, c2i, pos, xpos, rels = utils.vocab(options.conll_train)
+        with open(os.path.join(options.output, options.params), 'wb') as paramsfp:
+            pickle.dump((words, w2i, c2i, pos, xpos, rels, options), paramsfp)
 
-            with open(os.path.join(options.output, options.params), 'wb') as paramsfp:
-                pickle.dump((words, w2i, c2i, pos, xpos, rels, options), paramsfp)
+        print('Initializing  model')
+        parser = learner.parser(words, pos, xpos, rels, w2i, c2i, ext_words_train, ext_words_dev, options)
 
-            print('Initializing  model')
-            biaf_parser = learner.biAffine_parser(words, pos, xpos, rels, w2i, c2i, ext_words_train, ext_words_dev, options)
+        with open(options.conll_dev, 'r') as conllFP:
+            devData = list(utils.read_conll(conllFP, parser.c2i))
 
-            with open("Results.txt", "a") as results:
-                results.write("T_Step\tUAS\tLAS\n")
-        else:
+        conll_sentences = []
+        for sentence in devData:
+            conll_sentence = [entry for entry in sentence  if isinstance(entry, utils.ConllEntry)]
+            conll_sentences.append(conll_sentence)
 
-            with open(os.path.join(options.output, options.params), 'rb') as paramsfp:
-                words, w2i, c2i, pos, xpos, rels, stored_opt = pickle.load(paramsfp)
+        with open("Results.txt", "a") as results:
+            results.write("Epoch\tUAS\tLAS\n")
 
-
-            stored_opt.external_embedding = options.external_embedding
-
-            print('Loading  model')
-
-            biaf_parser = learner.biAffine_parser(words, pos, xpos, rels, w2i, c2i, ext_words_train, ext_words_dev, stored_opt)
-            biaf_parser.Load(os.path.join(options.output, os.path.basename(options.model)))
-
-
-
-        sentences,train_batches = utils.batch_train_data(options.conll_train,c2i,options.batch_tokens)
+        sentences,train_batches = utils.batch_data(options.conll_train,c2i,options.batch_tokens)
         batches = len(train_batches)
         highestScore = options.highest_score
-        tsId = options.last_epoch*batches
+        tsId = 0
         for epoch in range(options.last_epoch,options.epochs):
+
+            print("Starting epoch ",epoch+1)
             random.shuffle(train_batches)
+
             for idx,mini_batch in enumerate(train_batches):
+
                 t_step = (epoch * batches) +idx+1
                 if (t_step%5000 == 0):
-                    biaf_parser.Train(sentences,mini_batch,t_step,True)
+                    parser.Train(sentences,mini_batch,t_step,True)
                 else:
-                    biaf_parser.Train(sentences,mini_batch,t_step)
+                    parser.Train(sentences,mini_batch,t_step)
 
 
                 if (t_step <=1000):
                     if (t_step%100== 0):
                         print("Save Model...")
-                        biaf_parser.Save(os.path.join(options.output, os.path.basename(options.model)))
+                        parser.Save(os.path.join(options.output, os.path.basename(options.model)))
 
                 else:
                     print("Performance on Dev data")
                     start = time.time()
-                    devPredSents = biaf_parser.Predict(options.conll_dev)
+                    devPredSents = parser.Predict(conll_sentences,False)
                     count = 0
                     lasCount = 0
                     uasCount = 0
@@ -138,19 +145,20 @@ if __name__ == '__main__':
                     print("---\nUAS accuracy:\t%.2f" % (float(uasCount) * 100 / count))
                     print("LAS accuracy:\t%.2f" % (float(lasCount) * 100 / count))
                     with open("Results.txt", "a") as results:
-                        results.write(str(t_step)+"\t"+str(round((float(uasCount) * 100 / count),2))+"\t"+str(round((float(lasCount) * 100 / count),2))+"\n")
-
-
+                        results.write(str(epoch+1)+"\t"+str(round((float(uasCount) * 100 / count),2))+"\t"+str(round((float(lasCount) * 100 / count),2))+"\n")
 
                     score = (float(lasCount) * 100 / count)
-                    if score >= highestScore:
-                        biaf_parser.Save(os.path.join(options.output, os.path.basename(options.model)))
+                    if score > highestScore:
+                        parser.Save(os.path.join(options.output, os.path.basename(options.model)))
                         highestScore = score
                         tsId = t_step
 
-                    print("Highest LAS(@Dev): %.2f at trainning step %d" % (highestScore,tsId))
-
-                    if ((t_step - tsId) > 5000):
+                    print("Highest LAS(@Dev): %.2f at t_step %d" % (highestScore,tsId))
+                    print("-------------------------------------------------------------------")
+                    if ((t_step - tsId) > 2500):
                         print("Model trainning finish..")
                         print("Model  didn't improve during the last 5000 trainning steps")
+                        sys.exit()
+                    elif (t_step > 30000):
+                        print("Model trainning finish..")
                         sys.exit()
