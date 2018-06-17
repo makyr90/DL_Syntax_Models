@@ -155,7 +155,7 @@ if __name__ == '__main__':
 
                     print("Highest LAS(@Dev): %.2f at t_step %d" % (highestScore,tsId))
                     print("-------------------------------------------------------------------")
-                    if ((t_step - tsId) > 2500):
+                    if ((t_step - tsId) > 5000):
                         print("Model trainning finish..")
                         print("Model  didn't improve during the last 5000 trainning steps")
                         sys.exit()
