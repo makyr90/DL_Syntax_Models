@@ -2,9 +2,9 @@
 
 ## Greek dev data F1-score(gold POS/XPOS, sentence splitting and tokenization)
 
-- **UAS:**
+- **UAS:** 89.75
 
-- **LAS:**
+- **LAS:** 87.81
 
 
 ## Greek test data F1-score(predicted POS/XPOS + baseline sentence splitter & tokenizer)
