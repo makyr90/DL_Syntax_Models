@@ -9,6 +9,6 @@
 
 ## Greek test data F1-score(predicted POS/XPOS + baseline sentence splitter & tokenizer)
 
-- **UAS:** 
+- **UAS:** 89.38
 
-- **LAS:**
+- **LAS:** 86,78
