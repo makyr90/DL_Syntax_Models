@@ -279,8 +279,8 @@ class Affine_tagger:
 
         masks = [[1]* batch_size] + masks
         rmasks = list(reversed(masks))
-        self.fwdLSTM1.set_dropouts(self.dropout,self.dropout)
-        self.bwdLSTM1.set_dropouts(self.dropout,self.dropout)
+        self.fwdLSTM1.set_dropouts(self.dropout,0.5)
+        self.bwdLSTM1.set_dropouts(self.dropout,0.5)
         self.fwdLSTM2.set_dropouts(self.dropout,0.5)
         self.bwdLSTM2.set_dropouts(self.dropout,0.5)
         self.fwdLSTM1.set_dropout_masks(batch_size)
